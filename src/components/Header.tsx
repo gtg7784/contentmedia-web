@@ -3,8 +3,6 @@ import styled from 'styled-components';
 
 import logo from 'assets/logo.svg';
 
-// import logo from ''
-
 const Container = styled.header`
   width: calc(100% - 400px);
   height: 150px;
