@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 import Home from 'containers/Home';
 import Notfound from 'containers/Notfound';
+import GlobalStyles from 'globalStyles';
 
 const Container = styled.div`
   width: 1440px;
@@ -14,8 +15,10 @@ const Container = styled.div`
 
 class App extends React.Component {
   render(){
+    // console.log(globalStyles)
     return (
       <Container>
+        <GlobalStyles />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route exact component={Notfound} />

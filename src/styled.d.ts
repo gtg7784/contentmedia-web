@@ -1,14 +1,16 @@
-// import original module declarations
-import 'styled-components'
+import * as React from 'react';
+import { ThemedStyledComponentsModule } from 'styled-components';
 
-// and extend them!
 declare module 'styled-components' {
-  export interface DefaultTheme {
-    borderRadius: string
-
-    colors: {
-      main: string
-      secondary: string
-    }
+  export interface ThemedStyledComponentsModule<T> {
+      createGlobalStyle(
+          strings: TemplateStringsArray,
+          ...interpolations: SimpleInterpolation[]
+      ): React.ComponentClass;
   }
+
+  export function createGlobalStyle(
+    strings: TemplateStringsArray,
+    ...interpolations: SimpleInterpolation[]
+  ): React.ComponentClass;
 }
