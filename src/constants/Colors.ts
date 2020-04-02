@@ -13,7 +13,7 @@ const Colors = {
   deepSkyBlueTwo: "#007aff",
   robinSEgg: "#64d2ff",
   robinSEggTwo: "#5ac8fa",
-  Tangerine: "#ff9f0a",
+  tangerine: "#ff9f0a",
   tangerineTwo: "#ff9500",
   reddishPink: "#ff2d55",
   reddishPinkTwo: "#ff375f",
