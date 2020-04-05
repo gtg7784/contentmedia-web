@@ -62,7 +62,7 @@ class Vfriends extends React.Component<Props, State>{
     return(
       <Container>
         <HeaderComponent background="#222222" />
-        <ReactPlayer url="/static/media/banner.2cc65703.webm" width="1440px" height="810px" playing muted />
+        <ReactPlayer url="/static/media/banner.2cc65703.webm" width="1440px" height="810px" playing />
         <Bar />
         <Title>INTRODUCE</Title>
         <Illust src={vfriendsIllust} alt=""/>
