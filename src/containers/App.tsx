@@ -21,7 +21,6 @@ const Container = styled.div`
 
 class App extends React.Component {
   render(){
-    // console.log(globalStyles)
     return (
       <Container>
         <GlobalStyles />
