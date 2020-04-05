@@ -25,7 +25,6 @@ const IntroTextTypo = styled.img`
 const IntroText = styled.p`
   font-size: 14px;
   font-weight: bold;
-  font-family: 'Noto Sans KR', sans-serif;
   letter-spacing: 0.4px;
   color: #3f3d56;
 `;
@@ -39,7 +38,7 @@ const IntroImage = styled.img`
 
 interface Props { }
 
-const Intro: React.FC<Props> = () => {
+const IntroComponent: React.FC<Props> = () => {
   return (
     <Container>
       <IntroTextWrap>
@@ -61,4 +60,4 @@ const Intro: React.FC<Props> = () => {
   )
 }
 
-export default Intro;
+export default IntroComponent;
