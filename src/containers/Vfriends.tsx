@@ -1,4 +1,58 @@
 import React from 'react';
+import styled from 'styled-components';
+import ReactPlayer from 'react-player'
+
+import HeaderComponent from 'components/HeaderComponent';
+import PrizeComponent from 'components/PrizeComponent';
+
+// import vfirendsVideo from 'assets/vfirends/banner.webm';
+import vfriendsIllust from 'assets/vfirends/Illust.png';
+import schoolAward from 'assets/vfirends/47.svg';
+import suburbAward from 'assets/vfirends/8.svg';
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const Title = styled.h1`
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2.6px;
+  color: #3f3d56;
+`;
+const Bar = styled.div`
+  width: 100%;
+  height: 108px;
+  background-color: #222222;
+  margin-bottom: 64px;
+`;
+const Illust = styled.img`
+  width: 506.7px;
+  height: 158.1px;
+  margin-top: 120px;
+`;
+const Description = styled.p`
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #3f3d56;
+  margin-top: 60px;
+  margin-bottom: 248px;
+`;
+const PrizeWrap = styled.div`
+  width: 100%;
+  height: 512px;
+  background-color: #eba847;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 156px;
+  margin-bottom: 320px;
+`;
 
 interface Props { };
 interface State { };
@@ -6,7 +60,35 @@ interface State { };
 class Vfriends extends React.Component<Props, State>{
   render(){
     return(
-      <div/>
+      <Container>
+        <HeaderComponent background="#222222" />
+        <ReactPlayer url="/static/media/banner.2cc65703.webm" width="1440px" height="810px" playing muted />
+        <Bar />
+        <Title>INTRODUCE</Title>
+        <Illust src={vfriendsIllust} alt=""/>
+        <Description>
+          v.friends는 디자인의 즐거움을<br/>
+          다양한 사람들과 나누며 성장하는 곳으로,<br/>
+          콘텐츠디자인과 "디자인 교육 봉사 동아리"입니다.<br/>
+          여러가지 디자인을 배움과 동시에 아는 것을 공유합니다.<br/>
+          <br/>
+          v.friends는 2019년 멀티미디어과<br/>
+          신입생 특별교육을 시작으로 1, 2기 자율동아리로 활동을 했으며,<br/>
+          2020년 학과명 변경을 기점으로<br/>
+          콘텐츠다자인과 소속동아리가 되었습니다.<br/>
+          <br/>
+          v.friends에선 포토샵, 일러스트레이터, XD, 인디자인,<br/>
+          에프터 이펙트 등 다양한 디자인 툴을 배울 수 있습니다.<br/>
+          그리고 증진된 디자인 능력으로 다른 사람을 가르치면서<br/>
+          스피치 능력도 기를 수 있습니다.
+        </Description>
+        <Title>activities</Title>
+        <PrizeWrap>
+          <PrizeComponent title="school" number={schoolAward} />
+          <PrizeComponent number={suburbAward} />
+        </PrizeWrap>
+        <Title>ARTWORKS</Title>
+      </Container>
     )
   }
 }
