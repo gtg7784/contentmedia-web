@@ -30,24 +30,23 @@ const Listitem = styled.li`
   font-weight: bold;
   letter-spacing: 1.5px;
   color: #888888;
-  font-family: 'Noto Sans KR', sans-serif;
 `;
 
 interface Props { 
   background: string;
 }
 
-const Header: React.FC<Props> = (props: Props) => {
+const HeaderComponent: React.FC<Props> = (props: Props) => {
   return (
-    <Container style={{ background: props.background}}>
+    <Container style={{ background: props.background }}>
       <Logo src={logo} />
       <List>
         <Listitem>HOME</Listitem>
         <Listitem>MEMBERS</Listitem>
-        <Listitem>Q&A</Listitem>
+        <Listitem>QnA</Listitem>
       </List>
     </Container>
   )
 }
 
-export default Header;
+export default HeaderComponent;
