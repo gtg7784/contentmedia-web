@@ -26,7 +26,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1440px;
+  min-width: 1440px;
+  width: 100%;
   height: 100%;
   background: #f4f8fc;
   overflow-x: hidden;
