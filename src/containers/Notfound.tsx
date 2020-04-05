@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Header from 'components/Header';
+import HeaderComponent from 'components/HeaderComponent';
 
 import illust from 'assets/notfound-illust.svg';
 import homeTypo from 'assets/notfound-home.svg';
@@ -34,7 +34,6 @@ const Title = styled.div`
   margin-top: 24px;
 `;
 const Description = styled.div`
-  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -65,7 +64,7 @@ interface Props { }
 const Notfound: React.FC<Props> = () => {
   return (
     <Container>
-      <Header background="#fff" />
+      <HeaderComponent background="#fff" />
 
       <Illust src={illust} />
       <Title>404 NOT FOUND!</Title>
