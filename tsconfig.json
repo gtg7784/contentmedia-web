@@ -51,7 +51,7 @@
   "include": [
     "./index.js",
     "./src/**/*",
-    "./App.tsx"
+    "./App.tsx", "@types/webm.d.ts", ".firebase/setupTests.ts", "@types/styled.d.ts", "@types/react-app-env.d.ts"
   ],
   "exclude": [
     "node_modules"

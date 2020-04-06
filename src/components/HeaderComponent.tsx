@@ -11,6 +11,7 @@ const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0px 200px;
+  background-color: ${(props: ContainerProps) => props.background};
 `;
 const Logo = styled.img`
   width: 70px;
@@ -32,13 +33,17 @@ const Listitem = styled.li`
   color: #888888;
 `;
 
+interface ContainerProps {
+  background: string;
+}
+
 interface Props { 
   background: string;
 }
 
 const HeaderComponent: React.FC<Props> = (props: Props) => {
   return (
-    <Container style={{ background: props.background }}>
+    <Container background={props.background} >
       <Logo src={logo} />
       <List>
         <Listitem>HOME</Listitem>

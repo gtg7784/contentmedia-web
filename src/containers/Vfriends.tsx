@@ -5,10 +5,12 @@ import ReactPlayer from 'react-player'
 import HeaderComponent from 'components/HeaderComponent';
 import PrizeComponent from 'components/PrizeComponent';
 
-// import vfirendsVideo from 'assets/vfirends/banner.webm';
+import vfirendsVideo from 'assets/vfirends/banner.webm';
 import vfriendsIllust from 'assets/vfirends/Illust.png';
 import schoolAward from 'assets/vfirends/47.svg';
 import suburbAward from 'assets/vfirends/8.svg';
+
+console.log(vfirendsVideo);
 
 const Container = styled.div`
   display: flex;
