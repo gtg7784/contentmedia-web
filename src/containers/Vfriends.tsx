@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
 
 import HeaderComponent from 'components/HeaderComponent';
 import PrizeComponent from 'components/PrizeComponent';
@@ -418,8 +418,8 @@ class Vfriends extends React.Component<Props, State>{
     const { artworks } = this.state;
     return(
       <Container>
-        <HeaderComponent background="#222222" type="vfriends" />
-        <ReactPlayer url={vfirendsVideo} width="1440px" height="810px" playing muted />
+        <HeaderComponent background="#222222" type="vfriends" width="140px" height="37px" />
+        <ReactPlayer url={vfirendsVideo} width="1440px" height="810px" playing />
         <Bar />
         <Title>INTRODUCE</Title>
         <Illust src={vfriendsIllust} alt=""/>

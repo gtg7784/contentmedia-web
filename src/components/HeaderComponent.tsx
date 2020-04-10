@@ -2,8 +2,11 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import logo from 'assets/logo.svg';
-import vfriendsLogo from 'assets/vfriendsLogo.svg';
+import vfriendsLogo from 'assets/vfriendsLogoWhite.svg';
 import tateLogo from 'assets/tateLogo.svg';
+import mirLogo from 'assets/mirLogo.svg';
+import aunLogo from 'assets/aunLogo.svg';
+import junrLogo from 'assets/junrLogoWhite.svg';
 
 const Container = styled.header`
   width: calc(100% - 400px);
@@ -57,23 +60,23 @@ const getAsset = (type: assets): clubType => {
   const asset = {
     vfriends: {
       image: vfriendsLogo,
-      menu: []
+      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"]
     },
     tate: {
       image: tateLogo,
-      menu: []
+      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"]
     },
     mir: {
-      image: vfriendsLogo,
-      menu: []
+      image: mirLogo,
+      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"]
     },
     aun: {
-      image: vfriendsLogo,
-      menu: []
+      image: aunLogo,
+      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"]
     },
     junr: {
-      image: vfriendsLogo,
-      menu: []
+      image: junrLogo,
+      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"]
     },
     default: {
       image: logo,

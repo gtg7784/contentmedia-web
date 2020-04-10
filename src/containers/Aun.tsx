@@ -89,7 +89,7 @@ class Aun extends React.Component<Props, State>{
     const { artworks } = this.state;
     return(
       <Container>
-        <HeaderComponent background="#f4f8fc" />
+        <HeaderComponent background="#f4f8fc" type="aun" width="110px" height="52px" />
         <Banner src={aunBanner}/>
         <Title>INTRODUCE</Title>
         <Logo src={aunLogo}/>
