@@ -26,7 +26,7 @@ const Title = styled.h1`
   color: #3f3d56;
 `;
 const BannerWrap = styled.div`
-  width: 1440px;
+  min-width: 1440px;
   height: 810px;
   margin-bottom: 128px;
   display: flex;

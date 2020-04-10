@@ -26,7 +26,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 1440px;
+  min-min-width: 1440px;
   width: 100%;
   height: 100%;
   background: #f4f8fc;
@@ -167,7 +167,7 @@ class Home extends React.Component<Props, State>{
           bottom: 23,
         },
         {
-          to: "https://zeropen.kr/",
+          to: "https://zer0pen.kr/",
           content: "게임을 좋아하는 사람들이 모여<br/>우리만의 창의적인 게임을 만드는<br/>멀티플랫폼 게임개발동아리<br/><span>zer0pen</span>입니다",
           logo: zeropenLogo,
           top: 34.2,
@@ -196,7 +196,7 @@ class Home extends React.Component<Props, State>{
           bottom: 39,
         },
         {
-          to: "https://appleai.kr/",
+          to: "http://appplepie.kr",
           content: "선린인터넷 최초의<br/>모바일 콘텐츠 전문개발 동아리<br/><span>애플파이</span> 입니다",
           logo: applepiLogo,
           top: 40,

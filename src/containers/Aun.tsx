@@ -13,7 +13,7 @@ const Container = styled.div`
   align-items: center;
 `;
 const Banner = styled.img`
-  width: 1440px;
+  min-width: 1440px;
   height: 874px;
   margin-bottom: 64px;
 `;

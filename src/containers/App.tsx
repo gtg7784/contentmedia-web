@@ -14,7 +14,7 @@ import Junr from './Junr';
 import Mir from './Mir';
 
 const Container = styled.div`
-  width: 1440px;
+  min-width: 1440px;
   height: 100%;
   background: #f4f8fc;
 `;
