@@ -85,10 +85,10 @@ const FooterComponent: React.FC<Props> = () => {
         </Text>
       </ItemWrap>
       <IconWrap>
-        <Icon style={{ marginRight: 60 }} href="https://www.youtube.com/channel/UCTuj8x2de_3v6lxxFw_whpw">
+        <Icon style={{ marginRight: 32 }} href="https://www.youtube.com/channel/UCTuj8x2de_3v6lxxFw_whpw">
           <img src={youtube} alt=""/>
         </Icon>
-        <Icon style={{ marginRight: 60 }} href="https://www.facebook.com/선린인터넷고등학교-콘텐츠디자인과-시연회-106949140954012/">
+        <Icon style={{ marginRight: 32 }} href="https://www.facebook.com/선린인터넷고등학교-콘텐츠디자인과-시연회-106949140954012/">
           <img src={facebook} alt=""/>
         </Icon>
         <Icon href="http://sunrint.hs.kr/index.do">

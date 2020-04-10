@@ -249,7 +249,7 @@ class Home extends React.Component<Props, State>{
         <MembersWrap>
           <Title>MEMBERS</Title>
           <MembersContent>
-            <img src={scrollLeftIcon} style={{ position: "absolute", top: 1480, left: 100 }} alt="" onClick={() => this.setState({ clubStatus: 1 })} />
+            <img src={scrollLeftIcon} style={{ position: "absolute", top: 1480, left: 100 }} alt="" onClick={() => this.setState({ clubStatus: 0 })} />
             <ClubsWrap>
               {clubs.map((item, index) => (
                 <ClubComponent
@@ -263,7 +263,7 @@ class Home extends React.Component<Props, State>{
                   clubStatus={clubStatus} />
               ))}
             </ClubsWrap>
-            <img src={scrollRighttIcon} style={{ position: "absolute", top: 1480, right: 100 }} alt="" onClick={() => this.setState({ clubStatus: 0 })} />
+            <img src={scrollRighttIcon} style={{ position: "absolute", top: 1480, right: 100 }} alt="" onClick={() => this.setState({ clubStatus: 1 })} />
           </MembersContent>
           <DotWrap>
             <Dot style={clubStatus === 0 ? { backgroundColor: "#3f3d56" } : { backgroundColor: "#888888"}}/>

@@ -6,6 +6,8 @@ import ArtworkComponent from 'components/ArtworkComponent';
 
 import aunBanner from 'assets/aun/Banner.png';
 import aunLogo from 'assets/aunLogo.svg';
+import artwork1 from 'assets/aun/artwork1.png';
+import artwork2 from 'assets/aun/artwork2.png';
 
 const Container = styled.div`
   display: flex;
@@ -76,11 +78,23 @@ class Aun extends React.Component<Props, State>{
     this.state = {
       artworks: [
         {
-          img: "",
-          title: "자기소개 인포그래픽_곽승채",
-          type: "INFOGRAPHIC",
-          description: "나에 대한 정보를 인포그래픽으로 나타내었다. 기본적인 정보들과 취미, 관심사, 다룰 수 있는 프로그램이 주 내용이다. 간결한 느낌을 주기…",
+          img: artwork1,
+          title: "빈 집(스틸컷)_아우내",
+          type: "MOVIE MAKING",
+          description: "2019년 여름방학 때 22기, 23기 일부 부원들 및 지인들과 함께 촬영한 작품입니다. 동정심에 처음 보는 사람을 위해 노력한 것이 자신이 …",
           style: { marginLeft: 0 }
+        },
+        {
+          img: artwork2,
+          title: "Puzzle(퍼즐)_아우내",
+          type: "MOVIE",
+          description: '"Puzzle"은 아우내 24기 신입 부원 모집을 위해 제작된 홍보영상입니다. 아우내에서 영화를 찍는 것처럼, 작품에는 영화를 찍는 과정을 …',
+        },
+        {
+          img: artwork2,
+          title: "Puzzle(퍼즐)_아우내(현장)",
+          type: "MOVIE MAKING",
+          description: '"Puzzle"은 아우내 24기 신입 부원 모집을 위해 제작된 홍보영상입니다. 아우내에서 영화를 찍는 것처럼, 작품에는 영화를 찍는 과정을 …',
         },
       ]
     }
