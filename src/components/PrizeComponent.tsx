@@ -1,7 +1,5 @@
-import React from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
-import schoolAward from 'assets/schoolAward.svg';
-import suburbAward from 'assets/suburbAward.svg';
 
 const Container = styled.div`
   display: flex;
@@ -23,14 +21,14 @@ const Oval = styled.div`
 `;
 
 interface Props {
-  title?: string;
+  title: string;
   number: string;
 }
 
 const PrizeComponent: React.FC<Props> = (props: Props) => {
   return (
     <Container>
-      <Title src={props.title === "school" ? schoolAward : suburbAward} alt=""/>
+      <Title src={props.title} alt=""/>
       <Oval>
         <img src={props.number} alt=""/>
       </Oval>
