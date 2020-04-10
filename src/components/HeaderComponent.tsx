@@ -1,7 +1,9 @@
-import React from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 
 import logo from 'assets/logo.svg';
+import vfriendsLogo from 'assets/vfriendsLogo.svg';
+import tateLogo from 'assets/tateLogo.svg';
 
 const Container = styled.header`
   width: calc(100% - 400px);
@@ -14,8 +16,8 @@ const Container = styled.header`
   background-color: ${(props: ContainerProps) => props.background};
 `;
 const Logo = styled.img`
-  width: 70px;
-  height: 40px;
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
 `;
 
 const List = styled.ul`
@@ -33,22 +35,69 @@ const Listitem = styled.li`
   color: #888888;
 `;
 
+type assets = undefined | 'vfriends' | 'tate' | 'mir' | 'aun' | 'junr' | 'default';
+
 interface ContainerProps {
   background: string;
 }
 
-interface Props { 
-  background: string;
+interface clubType {
+  menu: Array<string>;
+  image: string;
 }
 
-const HeaderComponent: React.FC<Props> = (props: Props) => {
+interface Props { 
+  background: string;
+  type?: assets;
+  width?: string;
+  height?: string
+}
+
+const getAsset = (type: assets): clubType => {
+  const asset = {
+    vfriends: {
+      image: vfriendsLogo,
+      menu: []
+    },
+    tate: {
+      image: tateLogo,
+      menu: []
+    },
+    mir: {
+      image: vfriendsLogo,
+      menu: []
+    },
+    aun: {
+      image: vfriendsLogo,
+      menu: []
+    },
+    junr: {
+      image: vfriendsLogo,
+      menu: []
+    },
+    default: {
+      image: logo,
+      menu: ["HOME", "MEMBERS", "QnA"]
+    }
+  };
+
+  if(type === undefined){
+    return asset['default'];
+  }
+
+  return asset[type];
+}
+
+const HeaderComponent: React.FC<Props> = ({background, type, width="70px", height="40px"}: Props) => {
+  const asset = getAsset(type);
+
   return (
-    <Container background={props.background} >
-      <Logo src={logo} />
+    <Container background={background} >
+      <Logo src={asset.image} width={width} height={height}/>
       <List>
-        <Listitem>HOME</Listitem>
-        <Listitem>MEMBERS</Listitem>
-        <Listitem>QnA</Listitem>
+        {asset.menu.map((item, index) => (
+          <Listitem key={index}>{item}</Listitem>
+        ))}
       </List>
     </Container>
   )
