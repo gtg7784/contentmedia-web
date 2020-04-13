@@ -239,7 +239,7 @@ class Home extends React.Component<Props, State>{
     const { clubs, qna, clubStatus } = this.state;
     return(
       <Container>
-        <HeaderComponent background="#ffffff" />
+        <HeaderComponent />
         <IntroComponent/>
         <ScrollDownWrap>
           <ScrollDownText>SCROLL DOWN</ScrollDownText>

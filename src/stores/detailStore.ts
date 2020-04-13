@@ -16,8 +16,8 @@ export interface DetailStoreType {
 
 class DetailStore implements DetailStoreType{
   @observable data?: DetailType;
-  @action update = () => {
-    
+  @action update = (data: DetailType) => {
+    this.data = data;
   }
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { inject, observer } from 'mobx-react';
 import styled from 'styled-components';
 
 import HeaderComponent from 'components/HeaderComponent';
@@ -11,16 +12,19 @@ const Container = styled.div`
 
 
 interface Props { 
-  match: any;
+  DetailStore: any;
 }
-interface State { }
+interface State {}
 
+@inject('DetailStore')
+@observer
 class Detail extends React.Component<Props, State>{
   render(){
-    const { type } = this.props.match.params;
+    const { data } = this.props.DetailStore;
+    console.log(data);
     return(
       <Container>
-        <HeaderComponent type={type} background="#fff"/>
+        <HeaderComponent/>
       </Container>
     )
   }

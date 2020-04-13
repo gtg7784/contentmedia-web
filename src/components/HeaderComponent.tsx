@@ -47,40 +47,58 @@ interface ContainerProps {
 interface clubType {
   menu: Array<string>;
   image: string;
+  width: string;
+  height: string;
+  background: string;
 }
 
 interface Props { 
-  background: string;
   type?: assets;
-  width?: string;
-  height?: string
 }
 
 const getAsset = (type: assets): clubType => {
   const asset = {
     vfriends: {
       image: vfriendsLogo,
-      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"]
+      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"],
+      width: "140px",
+      height: "37px",
+      background: "#222222"
     },
     tate: {
       image: tateLogo,
-      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"]
+      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"],
+      width: "68px",
+      height: "68px",
+      background: "#f4f8fc"
     },
     mir: {
       image: mirLogo,
-      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"]
+      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"],
+      width: "80px",
+      height: "80px",
+      background: "#f4f8fc"
     },
     aun: {
       image: aunLogo,
-      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"]
+      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"],
+      width: "110px",
+      height: "52px",
+      background: "#f4f8fc"
     },
     junr: {
       image: junrLogo,
-      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"]
+      menu: ["HOME", "INTRODUCE", "ACTIVITIES", "ARTWORKS"],
+      width: "82px",
+      height: "80px",
+      background: "#222222"
     },
     default: {
       image: logo,
-      menu: ["HOME", "MEMBERS", "QnA"]
+      menu: ["HOME", "MEMBERS", "QnA"],
+      width: "70px",
+      height: "40px",
+      background: "#ffffff"
     }
   };
 
@@ -91,12 +109,12 @@ const getAsset = (type: assets): clubType => {
   return asset[type];
 }
 
-const HeaderComponent: React.FC<Props> = ({background, type, width="70px", height="40px"}: Props) => {
+const HeaderComponent: React.FC<Props> = ({type}: Props) => {
   const asset = getAsset(type);
 
   return (
-    <Container background={background} >
-      <Logo src={asset.image} width={width} height={height}/>
+    <Container background={asset.background} >
+      <Logo src={asset.image} width={asset.width} height={asset.height}/>
       <List>
         {asset.menu.map((item, index) => (
           <Listitem key={index}>{item}</Listitem>

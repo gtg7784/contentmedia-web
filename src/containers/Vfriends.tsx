@@ -426,7 +426,7 @@ class Vfriends extends React.Component<Props, State>{
     const { artworks } = this.state;
     return(
       <Container>
-        <HeaderComponent background="#222222" type="vfriends" width="140px" height="37px" />
+        <HeaderComponent type="vfriends" />
         <ReactPlayer url={vfirendsVideo} width="1440px" height="810px" playing />
         <Bar />
         <Title>INTRODUCE</Title>

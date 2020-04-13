@@ -64,7 +64,7 @@ interface Props { }
 const Notfound: React.FC<Props> = () => {
   return (
     <Container>
-      <HeaderComponent background="#fff" />
+      <HeaderComponent />
 
       <Illust src={illust} />
       <Title>404 NOT FOUND!</Title>

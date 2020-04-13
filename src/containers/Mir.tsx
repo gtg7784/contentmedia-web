@@ -355,7 +355,7 @@ class Mir extends React.Component<Props, State>{
     const { artworks } = this.state;
     return(
       <Container>
-        <HeaderComponent background="#f4f8fc" type="mir" width="80px" height="88px"/>
+        <HeaderComponent type="mir" />
         <BannerWrap>
           <LogoWrap>
             <Logo src={logo} alt="" style={{ marginTop: 0, marginBottom: 64 }}/>

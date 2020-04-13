@@ -344,7 +344,7 @@ class Tate extends React.Component<Props, State>{
     const { artworks } = this.state;
     return(
       <Container>
-        <HeaderComponent background="#f4f8fc" type="tate" width="68px" height="68px"/>
+        <HeaderComponent type="tate" />
         <Banner src={banner} alt=""/>
         <Title>INTRODUCE</Title>
         <Logo src={logo} alt=""/>

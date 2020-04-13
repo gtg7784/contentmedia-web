@@ -223,7 +223,7 @@ class Junr extends React.Component<Props, State>{
     const { artworks } = this.state;
     return(
       <Container>
-        <HeaderComponent background="#222222" type="junr" width="82px" height="80px"/>
+        <HeaderComponent type="junr"/>
         <ReactPlayer url={banner} width="1440px" height="810px" playing />
         <Bar />
         <Title>INTRODUCE</Title>
