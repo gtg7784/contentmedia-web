@@ -134,7 +134,7 @@ class Junr extends React.Component<Props, State>{
           img: artwork5,
           title: "유튜브 인트로_남민우",
           type: "MOTION GRAPHICS",
-          description: "미르를 상징하는 색인 분홍색과 연보라색을 주요색으로 사용하였다. 어떤 그림을 그려넣어야 조금 더 미르라는 것이 돋보일까 고민하다 …",
+          description: "저만의 유튜브를 만든다면 쓰게 될 인트로를 예상하여 만들어본 작품입니다. 애프터 이펙트로 제작한 영상으로 다른 사람들이 후회되는…",
           style: { marginLeft: 0 },
           link: "https://www.youtube.com/watch?v=5VnAhI9uBA0"
         },
