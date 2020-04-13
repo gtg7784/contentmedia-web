@@ -141,6 +141,7 @@ class Vfriends extends React.Component<Props, State>{
           title: "StreetLife_김민",
           type: "UI/UX",
           description: "버스킹 공연을 즐기는 이는 정말 많다. 하지만 버스커 이름을 알고 듣는 사람은 많을까? 왜 밴드 가수들이 재능을 가져도 기억되지 못할까?…",
+          link: "https://www.youtube.com/watch?v=vptk89gWqtQ",
         },
         {
           img: artwork3,
@@ -178,38 +179,44 @@ class Vfriends extends React.Component<Props, State>{
           title: "토스 모션그래픽 CF_김민",
           type: "3D MOTION GRAPHICS",
           description: "교내 영상 공모전에 출품했던 3D 모션그래픽 광고다. 휴대폰 화면 랩핑과 라이팅에 힘을 쏟았으며 직접 방 안에서 휴대폰을 촬영하고 그것을…",
+          link: "https://www.youtube.com/watch?v=6jL5R2LUPx8"
         },
         {
           img: artwork9,
           title: "브이프렌즈 홍보영상 3D_김민",
           type: "MOTION GRAPHICS",
           description: "브이프렌즈 시연회/홍보영상을 제작하였다.      렌더링은 모두 1프레임당 5분정도 걸렸고 60프레임으로 작업하였다. 렌더링하는 시간이…",
-          style: { marginLeft: 0 }
+          style: { marginLeft: 0 },
+          link: "https://www.youtube.com/watch?v=R-RnEn1n9fk"
         },
         {
           img: artwork10,
           title: "브프 홍보영상 2D_김민준",
           type: "MOTION GRAPHICS",
           description: "브이프렌즈의 홍보영상이다. 나레이션을 삽입하였고 모든 일러스트를 직접 제작하였다. 영상에는 브이프렌즈의 수상 내역등의 다양한…",
+          link: "https://www.youtube.com/watch?v=52l_2UQp6zw"
         },
         {
           img: artwork11,
           title: "브프 시연회 모션 2D_김민준",
           type: "MOTION GRAPHICS",
           description: "시연회 작품을 연결해서 한번에 보여주는 쇼릴 영상을 제작했다. ",
+          link: "https://www.youtube.com/watch?v=PEl0Z1o_v8c",
         },
         {
           img: artwork12,
           title: "서울 자전거, 따릉이_김민준",
           type: "VIDEO",
           description: "선린인터넷고등학교에 입학하고 나서 영상공모전에서 입상을 한 작품이다 이전에 받았던 그래픽공모전에서 상을 탔던 것과는 다르게 더…",
+          link: "https://www.youtube.com/watch?v=nZ-Tc915gLw"
         },
         {
           img: artwork13,
           title: "앱잼 NUGU ‘Zento’_김민준",
           type: "MOTION GRAPHICS",
           description: "작년 말 앱잼에서 제작했던 영상으로 열심히 작업했던 영상이다. 비록 입상을 하지는 못하였으나 외부 해커톤을 통해 새로운 경험을 할 수…",
-          style: { marginLeft: 0 }
+          style: { marginLeft: 0 },
+          link: "https://www.youtube.com/watch?v=k5vv6YPB0sc"
         },
         {
           img: artwork14,
@@ -247,6 +254,7 @@ class Vfriends extends React.Component<Props, State>{
           title: "iloveyourcheek_김예린 ",
           type: "MOTION GRAPHICS / ILLUSTRATION",
           description: "사이툴로 그림을 그리고 애프터이펙트로 모션을 넣어 포토샵을 이용하여 인스타그램 느낌을 주고 GIF 형태로 만들었다. 자칫 단조로울 수 있는…",
+          link: "https://www.youtube.com/watch?v=ue80sMES6DI"
         },
         {
           img: artwork20,

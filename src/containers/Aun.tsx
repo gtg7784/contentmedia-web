@@ -89,12 +89,14 @@ class Aun extends React.Component<Props, State>{
           title: "Puzzle(퍼즐)_아우내",
           type: "MOVIE",
           description: '"Puzzle"은 아우내 24기 신입 부원 모집을 위해 제작된 홍보영상입니다. 아우내에서 영화를 찍는 것처럼, 작품에는 영화를 찍는 과정을 …',
+          link: "https://www.youtube.com/watch?v=G4F6vlqpeAI"
         },
         {
           img: artwork2,
           title: "Puzzle(퍼즐)_아우내(현장)",
           type: "MOVIE MAKING",
           description: '"Puzzle"은 아우내 24기 신입 부원 모집을 위해 제작된 홍보영상입니다. 아우내에서 영화를 찍는 것처럼, 작품에는 영화를 찍는 과정을 …',
+          link: "https://www.youtube.com/watch?v=cM6LKF3OhVY"
         },
       ]
     }
