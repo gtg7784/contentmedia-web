@@ -14,6 +14,7 @@ import Aun from './Aun';
 import Tate from './Tate';
 import Junr from './Junr';
 import Mir from './Mir';
+import Detail from './Detail';
 
 const Container = styled.div`
   min-width: 1440px;
@@ -35,6 +36,7 @@ class App extends React.Component {
             <Route path="/tate" exact component={Tate}/>
             <Route path="/junr" exact component={Junr} />
             <Route path="/mir" exact component={Mir} />
+            <Route path="/detail/:type/:id" exact component={Detail}/>
             <Route exact component={Notfound} />
           </Switch>
         </Container>

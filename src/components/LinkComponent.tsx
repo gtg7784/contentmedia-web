@@ -8,7 +8,7 @@ interface Props {
 }
 
 const LinkComponent: React.FC<Props> = (props: Props) => (
-  <Link to={`/${props.name}/${props.index}`}>{props.child}</Link>
+  <Link to={`/detail/${props.name}/${props.index}`}>{props.child}</Link>
 )
 
 export default LinkComponent;
