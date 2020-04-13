@@ -1,8 +1,6 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
-import LinkComponent from 'components/LinkComponent';
-import AComponent from 'components/AComponent';
 
 const Container = styled.div`
   width: 220px;
@@ -53,24 +51,29 @@ interface Props {
 }
 
 const ArtworkComponent: React.FC<Props> = (props: Props) => {
-  const child = (
-    <React.Fragment>
+  let child;
+  if(props.link === undefined){
+    child = (
+      <Link to={`/detail/${props.name}/${props.index}`}>
+        <Image src={props.img}/>
+        <Title>{props.title}</Title>
+        <Type>{props.type}</Type>
+        <Description>{props.description}</Description>
+      </Link>
+    );
+  } else {
+    child = (
+      <a href={props.link}>
       <Image src={props.img}/>
       <Title>{props.title}</Title>
       <Type>{props.type}</Type>
       <Description>{props.description}</Description>
-    </React.Fragment>
-  );
-
-  let Child;
-  if(props.link === undefined){
-    Child = <LinkComponent name={props.name} index={props.index} child={child}/>;
-  } else {
-    Child = <AComponent link={props.link} child={child}/>;
+      </a>
+    );
   }
   return (
     <Container style={props.style}>
-      {Child}
+      {child}
     </Container>
   )
 }
