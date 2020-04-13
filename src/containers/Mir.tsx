@@ -389,7 +389,7 @@ class Mir extends React.Component<Props, State>{
         <ArtworkWrap>
           {artworks.map((item, index) => (
             <ArtworkComponent
-              name="vfriends"
+              name="mir"
               img={item.img}
               title={item.title}
               type={item.type}

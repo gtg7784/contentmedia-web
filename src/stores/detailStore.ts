@@ -1,4 +1,4 @@
-import { observable } from 'mobx';
+import { observable, action } from 'mobx';
 
 export interface DetailType {
   images: Array<string>;
@@ -16,6 +16,9 @@ export interface DetailStoreType {
 
 class DetailStore implements DetailStoreType{
   @observable data?: DetailType;
+  @action update = () => {
+    
+  }
 }
 
 const detailStore: DetailStore = new DetailStore();

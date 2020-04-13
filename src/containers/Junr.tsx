@@ -252,7 +252,7 @@ class Junr extends React.Component<Props, State>{
         <ArtworkWrap>
           {artworks.map((item, index) => (
             <ArtworkComponent
-              name="vfriends"
+              name="junr"
               img={item.img}
               title={item.title}
               type={item.type}

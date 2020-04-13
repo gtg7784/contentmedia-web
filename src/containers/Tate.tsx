@@ -370,7 +370,7 @@ class Tate extends React.Component<Props, State>{
         <ArtworkWrap>
           {artworks.map((item, index) => (
             <ArtworkComponent
-              name="vfriends"
+              name="tate"
               img={item.img}
               title={item.title}
               type={item.type}
