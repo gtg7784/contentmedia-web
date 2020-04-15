@@ -10,12 +10,12 @@ declare global {
       email: string;
       description: string;
     };
-    type: string;
+    link?: string;
   }
 
   export interface DetailStoreType {
     data: DetailType;
-    update?: (data: DetailType) => void;
+    update?: (data: DetailType) => any;
     updateType?: (data: string) => void;
   }
 }
