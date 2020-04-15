@@ -48,8 +48,7 @@ interface Props {
   index: number;
   name: string;
   style?: Object;
-  link?: string;
-  detail?: DetailType;
+  data?: DetailType;
   DetailStore?: any;
 }
 interface State { }
@@ -58,41 +57,18 @@ interface State { }
 @inject('DetailStore')
 class ArtworkComponent extends React.Component<Props, State> {
   render(){
-    const { link, name, index, title, type, img, description, style, DetailStore } = this.props;
-    let child;
-    if(link === undefined){
-      child = (
+    const { name, index, title, type, img, description, style, DetailStore, data } = this.props;
+  
+    const storeData: DetailType = data;
+
+    return (
+      <Container style={style} onClick={() => DetailStore.update(storeData)}>
         <Link to={`/detail/${name}/${index}`}>
           <Image src={img}/>
           <Title>{title}</Title>
           <Type>{type}</Type>
           <Description>{description}</Description>
         </Link>
-      );
-    } else {
-      child = (
-        <a href={link}>
-          <Image src={img}/>
-          <Title>{title}</Title>
-          <Type>{type}</Type>
-          <Description>{description}</Description>
-        </a>
-      );
-    }
-  
-    const data: DetailType = {
-      images: [img],
-      profile: {
-        name: "",
-        email: "",
-        description: description
-      },
-      type: name
-    }
-
-    return (
-      <Container style={style} onClick={() => DetailStore.update(data)}>
-        {child}
       </Container>
     )
   }
