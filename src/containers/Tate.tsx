@@ -105,7 +105,6 @@ interface Artwork {
   type: string;
   description: string;
   style?: Object;
-  link?: string;
 }
 interface Props { };
 interface State {
@@ -376,7 +375,6 @@ class Tate extends React.Component<Props, State>{
               type={item.type}
               description={item.description}
               style={item.style}
-              link={item.link}
               index={index}
               key={index}
             />

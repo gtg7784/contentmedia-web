@@ -8,7 +8,7 @@ class DetailStore implements DetailStoreType{
       email: "",
       description: ""
     },
-    type: ""
+    link: undefined
   };
 
   @action update(data: DetailType) {
