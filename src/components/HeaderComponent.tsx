@@ -38,8 +38,6 @@ const Listitem = styled.li`
   color: #888888;
 `;
 
-type assets = undefined | 'vfriends' | 'tate' | 'mir' | 'aun' | 'junr' | 'default';
-
 interface ContainerProps {
   background: string;
 }
@@ -53,10 +51,10 @@ interface clubType {
 }
 
 interface Props { 
-  type?: assets;
+  type?: clubs;
 }
 
-const getAsset = (type: assets): clubType => {
+const getAsset = (type: clubs): clubType => {
   const asset = {
     vfriends: {
       image: vfriendsLogo,
@@ -109,8 +107,8 @@ const getAsset = (type: assets): clubType => {
   return asset[type];
 }
 
-const HeaderComponent: React.FC<Props> = ({type}: Props) => {
-  const asset = getAsset(type);
+const HeaderComponent: React.FC<Props> = (props: Props) => {
+  const asset = getAsset(props.type);
 
   return (
     <Container background={asset.background} >

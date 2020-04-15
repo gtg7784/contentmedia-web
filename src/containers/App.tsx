@@ -2,8 +2,10 @@ import * as React from 'react';
 import { hot } from 'react-hot-loader'
 import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
+import { Provider, observer } from 'mobx-react';
 
 import GlobalStyles from 'globalStyles';
+import stores from 'stores';
 
 import Home from 'containers/Home';
 import Notfound from 'containers/Notfound';
@@ -20,22 +22,25 @@ const Container = styled.div`
   background: #f4f8fc;
 `;
 
+@observer
 class App extends React.Component {
   render(){
     return (
-      <Container>
-        <GlobalStyles />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/vfriends" exact component={Vfriends} />
-          <Route path="/aun" exact component={Aun} />
-          <Route path="/tate" exact component={Tate}/>
-          <Route path="/junr" exact component={Junr} />
-          <Route path="/mir" exact component={Mir} />
-          <Route path="/detail/:type/:id" exact component={Detail}/>
-          <Route exact component={Notfound} />
-        </Switch>
-      </Container>
+      <Provider {...stores}>
+        <Container>
+          <GlobalStyles />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/vfriends" exact component={Vfriends} />
+            <Route path="/aun" exact component={Aun} />
+            <Route path="/tate" exact component={Tate}/>
+            <Route path="/junr" exact component={Junr} />
+            <Route path="/mir" exact component={Mir} />
+            <Route path="/detail/:type/:id" exact component={Detail}/>
+            <Route exact component={Notfound} />
+          </Switch>
+        </Container>
+      </Provider>
     );
   }
 }

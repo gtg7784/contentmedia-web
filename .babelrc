@@ -1,4 +1,8 @@
 {
-  "presets": ["react-app"],
-  "plugins": ["react-hot-loader/babel"]
+  "presets": ["react-app", "mobx"],
+  "plugins": [
+    ["react-hot-loader/babel"],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "legacy": true }]
+  ]
 }

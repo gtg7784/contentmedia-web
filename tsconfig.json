@@ -22,9 +22,9 @@
     "removeComments": false,
     "strict": true,
     "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictPropertyInitialization": true,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
     "noImplicitThis": true,
     "alwaysStrict": true,
     "noUnusedLocals": true,
@@ -51,7 +51,12 @@
   "include": [
     "./index.js",
     "./src/**/*",
-    "./App.tsx", "@types/webm.d.ts", ".firebase/setupTests.ts", "@types/styled.d.ts", "@types/react-app-env.d.ts"
+    "./App.tsx",
+    "@types/webm.d.ts",
+    ".firebase/setupTests.ts",
+    "@types/styled.d.ts",
+    "@types/react-app-env.d.ts",
+    "@types/stores.d.ts"
   ],
   "exclude": [
     "node_modules"

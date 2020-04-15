@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { observer, inject } from 'mobx-react';
 
 const Container = styled.div`
   width: 220px;
@@ -48,34 +49,53 @@ interface Props {
   name: string;
   style?: Object;
   link?: string;
+  detail?: DetailType;
+  DetailStore?: any;
 }
+interface State { }
 
-const ArtworkComponent: React.FC<Props> = (props: Props) => {
-  let child;
-  if(props.link === undefined){
-    child = (
-      <Link to={`/detail/${props.name}/${props.index}`}>
-        <Image src={props.img}/>
-        <Title>{props.title}</Title>
-        <Type>{props.type}</Type>
-        <Description>{props.description}</Description>
-      </Link>
-    );
-  } else {
-    child = (
-      <a href={props.link}>
-      <Image src={props.img}/>
-      <Title>{props.title}</Title>
-      <Type>{props.type}</Type>
-      <Description>{props.description}</Description>
-      </a>
-    );
+@observer
+@inject('DetailStore')
+class ArtworkComponent extends React.Component<Props, State> {
+  render(){
+    const { link, name, index, title, type, img, description, style, DetailStore } = this.props;
+    let child;
+    if(link === undefined){
+      child = (
+        <Link to={`/detail/${name}/${index}`}>
+          <Image src={img}/>
+          <Title>{title}</Title>
+          <Type>{type}</Type>
+          <Description>{description}</Description>
+        </Link>
+      );
+    } else {
+      child = (
+        <a href={link}>
+          <Image src={img}/>
+          <Title>{title}</Title>
+          <Type>{type}</Type>
+          <Description>{description}</Description>
+        </a>
+      );
+    }
+  
+    const data: DetailType = {
+      images: [img],
+      profile: {
+        name: "",
+        email: "",
+        description: description
+      },
+      type: name
+    }
+
+    return (
+      <Container style={style} onClick={() => DetailStore.update(data)}>
+        {child}
+      </Container>
+    )
   }
-  return (
-    <Container style={props.style}>
-      {child}
-    </Container>
-  )
 }
 
 export default ArtworkComponent;

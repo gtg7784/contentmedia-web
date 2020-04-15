@@ -10,21 +10,24 @@ const Container = styled.div`
   background: #f4f8fc;
 `;
 
-
 interface Props { 
-  DetailStore: any;
+  DetailStore: DetailStoreType;
+  match: {
+    params: {
+      type: clubs;
+    }
+  };
 }
 interface State {}
 
-@inject('DetailStore')
 @observer
+@inject('DetailStore')
 class Detail extends React.Component<Props, State>{
   render(){
-    const { data } = this.props.DetailStore;
-    console.log(data);
+    const { match: { params: { type }}} = this.props;
     return(
       <Container>
-        <HeaderComponent/>
+        <HeaderComponent type={type}/>
       </Container>
     )
   }

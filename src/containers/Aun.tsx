@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { inject, observer } from 'mobx-react';
 import styled from 'styled-components';
 
 import HeaderComponent from 'components/HeaderComponent';
@@ -66,11 +67,16 @@ interface Artwork {
   style?: Object;
   link?: string;
 }
-interface Props { };
+interface Props {
+  DetailStore: any;
+};
 interface State {
   artworks: Array<Artwork>;
 };
 
+
+@inject('DetailStore')
+@observer
 class Aun extends React.Component<Props, State>{
   constructor(props: Props){
     super(props);
@@ -101,6 +107,7 @@ class Aun extends React.Component<Props, State>{
       ]
     }
   }
+
   render(){
     const { artworks } = this.state;
     return(
