@@ -48,7 +48,7 @@ interface Props {
   index: number;
   name: string;
   style?: Object;
-  data?: DetailType;
+  data?: DataType;
   DetailStore?: any;
 }
 interface State { }
@@ -59,7 +59,7 @@ class ArtworkComponent extends React.Component<Props, State> {
   render(){
     const { name, index, title, type, img, description, style, DetailStore, data } = this.props;
   
-    const storeData: DetailType = data;
+    const storeData: DataType = data;
 
     return (
       <Container style={style} onClick={() => DetailStore.update(storeData)}>
