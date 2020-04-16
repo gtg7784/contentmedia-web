@@ -20,8 +20,7 @@ const ContentWrap = styled.div`
   margin-top: 140px;
 `;
 const ArtworkWrap = styled.div`
-  width: 50%;
-  max-width: 512px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,6 +31,11 @@ const ProfileWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+`;
+const Image = styled.img`
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
 `;
 const Name = styled.h1`
   margin-top: 0px;
@@ -59,34 +63,76 @@ const Description = styled.p`
 `;
 
 interface Props { 
-  DetailStore: DetailStoreType;
+  AunStore: ClubStoreType;
+  JunrStore: ClubStoreType;
+  MirStore: ClubStoreType
+  TateStore: ClubStoreType;
+  VfriendsStore: ClubStoreType;
   match: {
     params: {
       type: clubs;
+      id: number;
     }
   };
 }
-interface State {}
+interface State {
+  data?: DataType;
+  type: clubs;
+}
 
+@inject('AunStore', 'JunrStore', 'MirStore', 'TateStore', 'VfriendsStore')
 @observer
-@inject('DetailStore')
 class Detail extends React.Component<Props, State>{
+  constructor(props: Props){
+    super(props);
+
+    this.state = {
+      type: undefined,
+    }
+  }
+  
+  componentDidMount(){
+    const { AunStore, JunrStore, MirStore, TateStore, VfriendsStore, match: { params: { type, id }}} = this.props;
+
+    let clubData: ClubStoreType;
+    
+    if(type === "aun") {
+      clubData = AunStore;
+    } else if (type === "junr") {
+      clubData = JunrStore;
+    } else if (type === "mir") {
+      clubData = MirStore;
+    } else if (type === "tate") {
+      clubData = TateStore;
+    } else if (type === "vfriends") {
+      clubData = VfriendsStore
+    }
+    
+    const json = JSON.stringify(clubData.data[+id]);
+
+    this.setState({
+      type: type,
+      data: JSON.parse(json).data
+    });
+  }
+  
   render(){
-    const { match: { params: { type }}, DetailStore: { data }} = this.props;
+    const { type, data } = this.state;
+
     return(
       <Container>
         <HeaderComponent type={type}/>
         <ContentWrap>
           <ArtworkWrap>
-            {data.images.map((item, index) => (
-              <img src={item} alt="" key={index}/>
+            {data && data.images.map((item: string, index: number) => (
+              <Image src={item} alt="" key={index}/>
             ))}
-            {data.link && <ReactPlayer url={data.link} width="600px" height="400px" />}
+            {data && data.link && <ReactPlayer url={data.link} width="600px" height="400px" />}
           </ArtworkWrap>
           <ProfileWrap>
-            <Name>{data.profile.name}</Name>
-            <Email>{data.profile.email}</Email>
-            <Description dangerouslySetInnerHTML={{ __html: data.profile.description }}/>
+            <Name>{data && data.profile.name}</Name>
+            <Email>{data && data.profile.email}</Email>
+            <Description dangerouslySetInnerHTML={{ __html: data && data.profile.description }}/>
           </ProfileWrap>
         </ContentWrap>
       </Container>
