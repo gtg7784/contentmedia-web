@@ -1,7 +1,7 @@
 import { observable, action } from 'mobx';
 
 class DetailStore implements DetailStoreType{
-  @observable data: DetailType = {
+  @observable data: DataType = {
     images: [""],
     profile: {
       name: "",
@@ -11,7 +11,7 @@ class DetailStore implements DetailStoreType{
     link: undefined
   };
 
-  @action update(data: DetailType) {
+  @action update(data: DataType) {
     this.data = data;
   }
 }
