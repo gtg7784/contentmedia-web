@@ -3,6 +3,8 @@ export {}
 // ambient module을 사용할 수 없으므로,
 // export {} 를 통해 external module로 만들어줌
 declare global {
+  type clubs = undefined | 'vfriends' | 'tate' | 'mir' | 'aun' | 'junr' | 'default';
+  
   export interface DataType {
     images: string[];
     profile: {
@@ -14,7 +16,7 @@ declare global {
   }
 
   export interface ArtworkType {
-    img: string;
+    thumbnail: string;
     title: string;
     type: string;
     description: string;
@@ -30,6 +32,8 @@ declare global {
 
   export interface ClubStoreType {
     data: Array<ArtworkType>;
-    name: string;
+    name: clubs;
+    updateData: (data: Array<ArtworkType>) => void;
+    updateName: (name: clubs) => void;
   }
 }
