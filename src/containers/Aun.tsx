@@ -65,7 +65,7 @@ interface Artwork {
   type: string;
   description: string;
   style?: Object;
-  data?: DetailType;
+  data?: DataType;
 }
 interface Props {
   DetailStore: any;

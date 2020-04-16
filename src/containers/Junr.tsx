@@ -88,7 +88,7 @@ interface Artwork {
   type: string;
   description: string;
   style?: Object;
-  data: DetailType;
+  data: DataType;
 }
 interface Props { };
 interface State {
@@ -386,6 +386,7 @@ class Junr extends React.Component<Props, State>{
               type={item.type}
               description={item.description}
               style={item.style}
+              data={item.data}
               index={index}
               key={index}
             />
