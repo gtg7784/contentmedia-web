@@ -2,10 +2,11 @@ import * as React from 'react';
 import { hot } from 'react-hot-loader'
 import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
-import { Provider, observer } from 'mobx-react';
+import { observer, inject } from 'mobx-react';
 
 import GlobalStyles from 'globalStyles';
-import stores from 'stores';
+
+import data from 'data';
 
 import Home from 'containers/Home';
 import Notfound from 'containers/Notfound';
@@ -22,25 +23,42 @@ const Container = styled.div`
   background: #f4f8fc;
 `;
 
+interface Props {
+  AunStore?: ClubStoreType;
+  JunrStore?: ClubStoreType;
+  MirStore?: ClubStoreType
+  TateStore?: ClubStoreType;
+  VfriendsStore?: ClubStoreType;
+}
+interface State { }
+
+@inject('AunStore', 'JunrStore', 'MirStore', 'TateStore', 'VfriendsStore')
 @observer
-class App extends React.Component {
+class App extends React.Component<Props, State>{
+  componentDidMount(){
+    const { AunStore, JunrStore, MirStore, TateStore, VfriendsStore } = this.props;
+    AunStore.updateData(data.aunData);
+    JunrStore.updateData(data.junrData);
+    MirStore.updateData(data.mirData);
+    TateStore.updateData(data.tateData);
+    VfriendsStore.updateData(data.vfriendsData);
+  }
+
   render(){
     return (
-      <Provider {...stores}>
-        <Container>
-          <GlobalStyles />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/vfriends" exact component={Vfriends} />
-            <Route path="/aun" exact component={Aun} />
-            <Route path="/tate" exact component={Tate}/>
-            <Route path="/junr" exact component={Junr} />
-            <Route path="/mir" exact component={Mir} />
-            <Route path="/detail/:type/:id" exact component={Detail}/>
-            <Route exact component={Notfound} />
-          </Switch>
-        </Container>
-      </Provider>
+      <Container>
+        <GlobalStyles />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/vfriends" exact component={Vfriends} />
+          <Route path="/aun" exact component={Aun} />
+          <Route path="/tate" exact component={Tate}/>
+          <Route path="/junr" exact component={Junr} />
+          <Route path="/mir" exact component={Mir} />
+          <Route path="/detail/:type/:id" exact component={Detail}/>
+          <Route exact component={Notfound} />
+        </Switch>
+      </Container>
     );
   }
 }
