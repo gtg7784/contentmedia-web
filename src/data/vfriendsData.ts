@@ -44,7 +44,7 @@ import artwork43 from 'assets/vfirends/artwork43.png';
 import artwork44 from 'assets/vfirends/artwork44.png';
 import artwork45 from 'assets/vfirends/artwork45.png';
 
-const data: Array<ArtworkType> = [
+const vfriendsData: Array<ArtworkType> = [
   {
     thumbnail: artwork1,
     title: "자기소개 인포그래픽_곽승채",
@@ -697,4 +697,4 @@ const data: Array<ArtworkType> = [
   }
 ]
 
-export { data as vfriendsData };
+export default vfriendsData;

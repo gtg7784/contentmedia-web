@@ -32,7 +32,7 @@ import artwork31 from 'assets/mir/artwork31.png';
 import artwork32 from 'assets/mir/artwork32.png';
 import artwork33 from 'assets/mir/artwork33.png';
 
-const data: Array<ArtworkType> = [
+const mirData: Array<ArtworkType> = [
   {
     thumbnail: artwork1,
     title: "꽃가루 요정, 비비_강민지",
@@ -506,4 +506,4 @@ const data: Array<ArtworkType> = [
   },
 ];
 
-export { data as mirData };
+export default mirData;

@@ -5,9 +5,9 @@ import tateData from './tateData';
 import vfriendsData from './vfriendsData';
 
 export default {
-  AunData: aunData,
-  JunrData: junrData,
-  MirData: mirData,
-  TateData: tateData,
-  VfriendsData: vfriendsData
+  aunData,
+  junrData,
+  mirData,
+  tateData,
+  vfriendsData
 }

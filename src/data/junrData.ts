@@ -15,7 +15,7 @@ import artwork14 from 'assets/junr/artwork14.png';
 import artwork15 from 'assets/junr/artwork15.png';
 import artwork16 from 'assets/junr/artwork16.png';
 
-const data: Array<ArtworkType> = [
+const junrData: Array<ArtworkType> = [
   {
     thumbnail: artwork1,
     title: "자의누리 타이포 합작_눈",
@@ -261,4 +261,4 @@ const data: Array<ArtworkType> = [
   },
 ];
 
-export { data as junrData };
+export default junrData;

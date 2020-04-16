@@ -1,7 +1,7 @@
 import artwork1 from 'assets/aun/artwork1.png';
 import artwork2 from 'assets/aun/artwork2.png';
 
-const data: Array<ArtworkType> = [
+const aunData: Array<ArtworkType> = [
   {
     thumbnail: artwork1,
     title: "빈 집(스틸컷)_아우내",
@@ -49,4 +49,4 @@ const data: Array<ArtworkType> = [
   },
 ];
 
-export { data as aunData };
+export default aunData;

@@ -34,7 +34,7 @@ import artwork33 from 'assets/tate/artwork33.png';
 import artwork34 from 'assets/tate/artwork34.png';
 import artwork35 from 'assets/tate/artwork35.png';
 
-const data: Array<ArtworkType> = [
+const tateData: Array<ArtworkType> = [
   {
     thumbnail: artwork1,
     title: "할로윈 콜라주_김나현",
@@ -536,4 +536,4 @@ const data: Array<ArtworkType> = [
   },
 ]
 
-export { data as tateData };
+export default tateData;
