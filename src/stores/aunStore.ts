@@ -1,8 +1,8 @@
 import { observable, action } from 'mobx';
 
-class MirStore implements ClubStoreType {
+class AunStore implements ClubStoreType {
   @observable data: Array<ArtworkType> = [];
-  @observable name: clubs = "mir";
+  @observable name: clubs = "aun";
 
   @action updateData = (data: Array<ArtworkType>): void => {
     this.data = data;
@@ -12,6 +12,6 @@ class MirStore implements ClubStoreType {
   }
 }
 
-const mirStore: MirStore = new MirStore();
+const aunStore: AunStore = new AunStore();
 
-export default mirStore;
+export default aunStore;
