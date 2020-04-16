@@ -34,6 +34,42 @@ import artwork33 from 'assets/tate/artwork33.png';
 import artwork34 from 'assets/tate/artwork34.png';
 import artwork35 from 'assets/tate/artwork35.png';
 
+import artwork1_1 from 'assets/tate/data/1/1.jpg';
+import artwork2_1 from 'assets/tate/data/2/1.jpg';
+import artwork3_1 from 'assets/tate/data/3/1.jpg';
+import artwork4_1 from 'assets/tate/data/4/1.jpg';
+import artwork5_1 from 'assets/tate/data/5/1.jpg';
+import artwork6_1 from 'assets/tate/data/6/1.jpg';
+import artwork7_1 from 'assets/tate/data/7/1.jpg';
+import artwork8_1 from 'assets/tate/data/8/1.jpg';
+import artwork9_1 from 'assets/tate/data/9/1.jpg';
+import artwork10_1 from 'assets/tate/data/10/1.jpg';
+import artwork11_1 from 'assets/tate/data/11/1.jpg';
+import artwork12_1 from 'assets/tate/data/12/1.jpg';
+import artwork13_1 from 'assets/tate/data/13/1.png';
+import artwork14_1 from 'assets/tate/data/14/1.jpg';
+import artwork15_1 from 'assets/tate/data/15/1.png';
+import artwork16_1 from 'assets/tate/data/16/1.jpg';
+import artwork17_1 from 'assets/tate/data/17/1.jpg';
+import artwork18_1 from 'assets/tate/data/18/1.jpg';
+import artwork19_1 from 'assets/tate/data/19/1.png';
+import artwork20_1 from 'assets/tate/data/20/1.png';
+import artwork21_1 from 'assets/tate/data/21/1.jpg';
+import artwork22_1 from 'assets/tate/data/22/1.jpg';
+import artwork23_1 from 'assets/tate/data/23/1.jpg';
+import artwork24_1 from 'assets/tate/data/24/1.jpg';
+import artwork25_1 from 'assets/tate/data/25/1.jpg';
+import artwork26_1 from 'assets/tate/data/26/1.jpg';
+import artwork27_1 from 'assets/tate/data/27/1.jpg';
+import artwork28_1 from 'assets/tate/data/28/1.jpg';
+import artwork29_1 from 'assets/tate/data/29/1.jpg';
+import artwork30_1 from 'assets/tate/data/30/1.jpg';
+import artwork31_1 from 'assets/tate/data/31/1.png';
+import artwork32_1 from 'assets/tate/data/32/1.jpg';
+import artwork33_1 from 'assets/tate/data/33/1.png';
+import artwork34_1 from 'assets/tate/data/34/1.jpg';
+import artwork35_1 from 'assets/tate/data/35/1.jpg';
+
 const tateData: Array<ArtworkType> = [
   {
     thumbnail: artwork1,
@@ -42,10 +78,10 @@ const tateData: Array<ArtworkType> = [
     description: "테이트 축제 굿즈인 스티커로 제작했던 할로윈 콜라주이다.",
     style: { marginLeft: 0 },
     data: {
-      images: [],
+      images: [artwork1_1],
       profile: {
         name: '김나현',
-        email: '',
+        email: 'whynxt@naver.com',
         description: '테이트 축제 굿즈인 스티커로 제작했던 할로윈 콜라주이다.'
       },
     }
@@ -56,10 +92,10 @@ const tateData: Array<ArtworkType> = [
     type: "COLLAGE",
     description: "내가 바라는 유토피아를 표현한 콜라주이다. 유토피아라는 이름답게 내가 좋아하는 색 계열로 구성했다.",
     data: {
-      images: [],
+      images: [artwork2_1],
       profile: {
         name: '김나현',
-        email: '',
+        email: 'whynxt@naver.com',
         description: '내가 바라는 유토피아를 표현한 콜라주이다. 유토피아라는 이름답게 내가 좋아하는 색 계열로 구성했다.'
       },
     }
@@ -70,10 +106,10 @@ const tateData: Array<ArtworkType> = [
     type: "COLLAGE",
     description: "내가 바라는 유토피아를 표현한 콜라주이다. 유토피아라는 이름답게 내가 좋아하는 색 계열로 구성했다.",
     data: {
-      images: [],
+      images: [artwork3_1],
       profile: {
         name: '김나현',
-        email: '',
+        email: 'whynxt@naver.com',
         description: '내가 바라는 유토피아를 표현한 콜라주이다. 유토피아라는 이름답게 내가 좋아하는 색 계열로 구성했다.'
       },
     }
@@ -84,10 +120,10 @@ const tateData: Array<ArtworkType> = [
     type: "ALBUM COVER",
     description: "데이식스의 ‘colors’를 들으며 작업한 앨범 커버 아트이다. 노래의 분위기와 가사를 모두 반영해 열심히 작업했다.",
     data: {
-      images: [],
+      images: [artwork4_1],
       profile: {
         name: '김나현',
-        email: '',
+        email: 'whynxt@naver.com',
         description: '데이식스의 ‘colors’를 들으며 작업한 앨범 커버 아트이다. 노래의 분위기와 가사를 모두 반영해 열심히 작업했다.'
       },
     }
@@ -99,10 +135,10 @@ const tateData: Array<ArtworkType> = [
     description: "2019 선린축제의 포스터를 맡아서 작업했다. 다양한 사람들이 하나가 되어 모이는 것을 표현하고자 각각 색감이 상반되는 세가지의 색을…",
     style: { marginLeft: 0 },
     data: {
-      images: [],
+      images: [artwork5_1],
       profile: {
         name: '김나현',
-        email: '',
+        email: 'whynxt@naver.com',
         description: '2019 선린축제의 포스터를 맡아서 작업했다. 다양한 사람들이 하나가 되어 모이는 것을 표현하고자 각각 색감이 상반되는 세가지의 색을 주로 사용하여 작업했다.'
       },
     }
@@ -113,10 +149,10 @@ const tateData: Array<ArtworkType> = [
     type: "EDITORIAL DESIGN",
     description: "반 친구들과 함께 2020년을 맞이하기 위해 만든 신년엽서이다. 2020년 컬러인 클래식 블루를 주로 사용하였고 각각의 선택에 따라 각자 그에…",
     data: {
-      images: [],
+      images: [artwork6_1],
       profile: {
         name: '김나현',
-        email: '',
+        email: 'whynxt@naver.com',
         description: '반 친구들과 함께 2020년을 맞이하기 위해 만든 신년엽서이다. 2020년 컬러인 클래식 블루를 주로 사용하였고 각각의 선택에 따라 각자 그에 맞는 다른 해가 뜰 테니 어떤 선택이건 자신을 가지고 2020년을 보내라는 의미를 담고있다.'
       },
     }
@@ -127,7 +163,7 @@ const tateData: Array<ArtworkType> = [
     type: "ALBUM COVER",
     description: "외주를 받은 작품인데 음악 이름이 ‘이스케이프’라고 해서 그에 맞는 분위기를 조성했습니다.",
     data: {
-      images: [],
+      images: [artwork7_1],
       profile: {
         name: '김상현',
         email: '',
@@ -141,7 +177,7 @@ const tateData: Array<ArtworkType> = [
     type: "COLLAGE",
     description: "인스타를 둘러보던 중 어떤 분의 콜라주 작품을 보고 영감을 받아 제작하게 됐습니다.",
     data: {
-      images: [],
+      images: [artwork8_1],
       profile: {
         name: '김상현',
         email: '',
@@ -156,7 +192,7 @@ const tateData: Array<ArtworkType> = [
     description: "학교축제 테이트 부서에서 스티커로 내려고 만든 작품입니다. 도트로 최대한 할로윈 분위기를 살려 만든 작품입니다.",
     style: { marginLeft: 0 },
     data: {
-      images: [],
+      images: [artwork9_1],
       profile: {
         name: '김상현',
         email: '',
@@ -170,7 +206,7 @@ const tateData: Array<ArtworkType> = [
     type: "CHARACTER DESIGN",
     description: "캐릭터 디자인 수행평가를 위해 만든 작품입니다.",
     data: {
-      images: [],
+      images: [artwork10_1],
       profile: {
         name: '김상현',
         email: '',
@@ -184,7 +220,7 @@ const tateData: Array<ArtworkType> = [
     type: "INFOGRAPHIC",
     description: "제로부터 시작하는 이 세계에 대해, 인포그래픽 수행평가를 위해 만든 타이틀입니다",
     data: {
-      images: [],
+      images: [artwork11_1],
       profile: {
         name: '김상현',
         email: '',
@@ -198,10 +234,10 @@ const tateData: Array<ArtworkType> = [
     type: "ALBUM COVER",
     description: "",
     data: {
-      images: [],
+      images: [artwork12_1],
       profile: {
         name: '박은별',
-        email: '',
+        email: 'parkeunbyul212@gmail.com',
         description: ''
       },
     }
@@ -213,10 +249,10 @@ const tateData: Array<ArtworkType> = [
     description: "",
     style: { marginLeft: 0 },
     data: {
-      images: [],
+      images: [artwork13_1],
       profile: {
         name: '박은별',
-        email: '',
+        email: 'parkeunbyul212@gmail.com',
         description: ''
       },
     }
@@ -227,10 +263,10 @@ const tateData: Array<ArtworkType> = [
     type: "EDITORIAL DESIGN",
     description: "‘Charmant’는 매력적인 이라는 뜻을 가진 불어로 패션 관련 포스터나 잡지에 맞는 컨셉으로 디자인했다.  평범함에서 벗어나 이미지와 …",
     data: {
-      images: [],
+      images: [artwork14_1],
       profile: {
         name: '박은별',
-        email: '',
+        email: 'parkeunbyul212@gmail.com',
         description: "콜라주 느낌으로 만든 디자인이다.<br/>‘Charmant’는 매력적인 이라는 뜻을 가진 불어로 패션 관련 포스터나 잡지에 맞는 컨셉으로 디자인했다. 평범함에서 벗어나 이미지와 도형을 자유롭게 사용하여 독특한 분위기를 냈다"
       },
     }
@@ -241,10 +277,10 @@ const tateData: Array<ArtworkType> = [
     type: "COLLAGE",
     description: "콜라주 느낌으로 만든 디자인이다. 배경을 흰색으로 정하여 뜻한 청소년의 순수함 위에 여러 색과 기하학적인 도형과 선들을 이용해 호기심…",
     data: {
-      images: [],
+      images: [artwork15_1],
       profile: {
         name: '박은별',
-        email: '',
+        email: 'parkeunbyul212@gmail.com',
         description: '이건 약간 나의 하루 또는 나의 성격을 나타내고자 한 작품이다. <br/>배경을 흰색으로 정하여 뜻한 청소년의 순수함 위에 여러 색과 기하학적인 도형과 선들을 이용해 호기심 많고 발랄한 모습을 담았다. <br/>깔끔하고 명확하게 나타내고자 한 게 목적이었는데 무작정 시작하고 보니 더 잘할 수 있었던 것 같다.'
       },
     }
@@ -255,10 +291,10 @@ const tateData: Array<ArtworkType> = [
     type: "POSTER",
     description: "제가 활동하고 있는 단체의 포스터 디자인입니다. 단체의 팀컬러인 주황색으로 단체의 열정을 형상화시켰습니다.",
     data: {
-      images: [],
+      images: [artwork16_1],
       profile: {
         name: '송지연',
-        email: '',
+        email: 'thdttl@naver.com',
         description: '제가 활동하고 있는 단체의 포스터 디자인입니다. 단체의 팀컬러인 주황색으로 단체의 열정을 형상화시켰습니다.'
       },
     }
@@ -270,10 +306,10 @@ const tateData: Array<ArtworkType> = [
     description: "신비로운 느낌을 주기 위해 보라 계열을 사용하여 작업한 딸기 케이크 픽셀아트입니다. ",
     style: { marginLeft: 0 },
     data: {
-      images: [],
+      images: [artwork17_1],
       profile: {
         name: '송지연',
-        email: '',
+        email: 'thdttl@naver.com',
         description: '신비로운 느낌을 주기 위해 보라 계열을 사용하여 작업한 딸기 케이크 픽셀아트입니다.'
       },
     }
@@ -284,10 +320,10 @@ const tateData: Array<ArtworkType> = [
     type: "ILLUSTRATION",
     description: "'strawberry cake'와 함께 작업한 픽셀아트로, 진한 핑크색을 사용하여 앞서 작업한 픽셀아트에 비해 귀여운 느낌을 나타냈습니다….",
     data: {
-      images: [],
+      images: [artwork18_1],
       profile: {
         name: '송지연',
-        email: '',
+        email: 'thdttl@naver.com',
         description: "'strawberry cake'와 함께 작업한 픽셀아트로, 진한 핑크색을 사용하여 앞서 작업한 픽셀아트에 비해 귀여운 느낌을 나타냈습니다."
       },
     }
@@ -298,10 +334,10 @@ const tateData: Array<ArtworkType> = [
     type: "EDITORIAL DESIGN",
     description: "크리스마스의 분위기를 살린 그래픽디자인입니다. 레트로한 느낌을 나타내기 위해 빛바랜 느낌의 색상을 이용하여 작업하였습니다",
     data: {
-      images: [],
+      images: [artwork19_1],
       profile: {
         name: '송지연',
-        email: '',
+        email: 'thdttl@naver.com',
         description: '크리스마스의 분위기를 살린 그래픽디자인입니다. 레트로한 느낌을 나타내기 위해 빛바랜 느낌의 색상을 이용하여 작업하였습니다.'
       },
     }
@@ -312,10 +348,10 @@ const tateData: Array<ArtworkType> = [
     type: "INFOGRAPHIC",
     description: "가수 '페퍼톤스'의 기본적인 정보가 담겨있는 그래픽디자인입니다.",
     data: {
-      images: [],
+      images: [artwork20_1],
       profile: {
         name: '송지연',
-        email: '',
+        email: 'thdttl@naver.com',
         description: "가수 '페퍼톤스'의 기본적인 정보가 담겨있는 그래픽디자인입니다."
       },
     }
@@ -327,7 +363,7 @@ const tateData: Array<ArtworkType> = [
     description: "할로윈을 주제로 한 일러스트",
     style: { marginLeft: 0 },
     data: {
-      images: [],
+      images: [artwork21_1],
       profile: {
         name: '유혜진',
         email: '',
@@ -341,7 +377,7 @@ const tateData: Array<ArtworkType> = [
     type: "ILLUSTRATION",
     description: "'strawberry cake'와 함께 작업한 픽셀아트로, 진한 핑크색을 사용하여 앞서 작업한 픽셀아트에 비해 귀여운 느낌을 나타냈습니다….",
     data: {
-      images: [],
+      images: [artwork22_1],
       profile: {
         name: '유혜진',
         email: '',
@@ -355,7 +391,7 @@ const tateData: Array<ArtworkType> = [
     type: "ILLUSTRATION",
     description: "blackbear의 노래 hot girl bummer의 자켓사진을 재해석한 일러스트",
     data: {
-      images: [],
+      images: [artwork23_1],
       profile: {
         name: '유혜진',
         email: '',
@@ -369,10 +405,10 @@ const tateData: Array<ArtworkType> = [
     type: "ILLUSTRATION",
     description: "오로지 수채화 물감을 이용해 그린 케이크이다.",
     data: {
-      images: [],
+      images: [artwork24_1],
       profile: {
         name: '정제우',
-        email: '',
+        email: 'yus000002@naver.com',
         description: "오로지 수채화 물감을 이용해 그린 케이크이다.",
       },
     }
@@ -384,10 +420,10 @@ const tateData: Array<ArtworkType> = [
     description: "포스터물감과 수채화 물감을 이용해 그린 지하철이다.",
     style: { marginLeft: 0 },
     data: {
-      images: [],
+      images: [artwork25_1],
       profile: {
         name: '정제우',
-        email: '',
+        email: 'yus000002@naver.com',
         description: "포스터물감과 수채화 물감을 이용해 그린 지하철이다.",
       },
     }
@@ -398,10 +434,10 @@ const tateData: Array<ArtworkType> = [
     type: "ILLUSTRATION",
     description: "2019년 테이트 할로윈 파티를 맞이하여 손거울에 썼던 디자인이다. 달이 나무에 기생되고있는 것과 그 안에 있는 묘지와 좀비는 할로윈 …",
     data: {
-      images: [],
+      images: [artwork26_1],
       profile: {
         name: '정제우',
-        email: '',
+        email: 'yus000002@naver.com',
         description: '2019년 테이트 할로윈 파티를 맞이하여 손거울에 썼던 디자인이다. 달이 나무에 기생되고있는 것과 그 안에 있는 묘지와 좀비는 할로윈 분위기를 조성한다.'
       },
     }
@@ -412,10 +448,10 @@ const tateData: Array<ArtworkType> = [
     type: "ILLUSTRATION",
     description: "마블에 나오는 베놈과 그의 숙적 카니지를 대치하는 그림으로써 빨간색 배경으로 정열적이고 격렬한 느낌을 준다.",
     data: {
-      images: [],
+      images: [artwork27_1],
       profile: {
         name: '정제우',
-        email: '',
+        email: 'yus000002@naver.com',
         description: '마블에 나오는 베놈과 그의 숙적 카니지를 대치하는 그림으로써 빨간색 배경으로 정열적이고 격렬한 느낌을 준다.'
       },
     }
@@ -426,10 +462,10 @@ const tateData: Array<ArtworkType> = [
     type: "INFOGRAPHIC",
     description: "‘나’를 소개하기 위한 인포그래픽이다. 차분한 색채를 통해 깔끔한 느낌으로 제작하였다. ",
     data: {
-      images: [],
+      images: [artwork28_1],
       profile: {
         name: '정한비',
-        email: '',
+        email: 'kkhcds4@naver.com',
         description: "‘나’를 소개하기 위한 인포그래픽이다. 차분한 색채를 통해 깔끔한 느낌으로 제작하였다. "
       },
     }
@@ -441,10 +477,10 @@ const tateData: Array<ArtworkType> = [
     description: "평소 좋아하던 가오리를 캐릭터로 디자인하여 이모티콘 형식으로 만들었다. 6종류의 표정과 기본형을 제작하여 디자인한 캐릭터를 소개…",
     style: { marginLeft: 0 },
     data: {
-      images: [],
+      images: [artwork29_1],
       profile: {
         name: '정한비',
-        email: '',
+        email: 'kkhcds4@naver.com',
         description: '평소 좋아하던 가오리를 캐릭터로 디자인하여 이모티콘 형식으로 만들었다. 6종류의 표정과 기본형을 제작하여 디자인한 캐릭터를 소개하는 판넬을 제작하였다.'
       },
     }
@@ -455,10 +491,10 @@ const tateData: Array<ArtworkType> = [
     type: "ALBUM COVER",
     description: "‘신예찬, 정한결, 김민아의 <그럴 수 있구나>’의 앨범아트이다. 사진을 보정하고 디자인해 제작하였다. ",
     data: {
-      images: [],
+      images: [artwork30_1],
       profile: {
         name: '정한비',
-        email: '',
+        email: 'kkhcds4@naver.com',
         description: "‘신예찬, 정한결, 김민아의 <그럴 수 있구나>’의 앨범아트이다. 사진을 보정하고 디자인해 제작하였다. "
       },
     }
@@ -469,10 +505,10 @@ const tateData: Array<ArtworkType> = [
     type: "EDITORIAL DESIGN",
     description: "실사 촬영한 사진에 노이즈와 배경 보정으로 레트로한 느낌을 추가하여 과거와 현재가 융합된 느낌의 표지를 디자인하였다. 밤이지만…",
     data: {
-      images: [],
+      images: [artwork31_1],
       profile: {
         name: '정한비',
-        email: '',
+        email: 'kkhcds4@naver.com',
         description: ''
       },
     }
@@ -483,10 +519,10 @@ const tateData: Array<ArtworkType> = [
     type: "EDITORIAL DESIGN",
     description: "‘로맨틱펀치의 <메이데이 메이데이>의 키네틱 타이포그래피 영상이다. 몽환적이고 빠른 우주 공간을 표현하였고 밴드의 영상을 넣는 등 …",
     data: {
-      images: [],
+      images: [artwork32_1],
       profile: {
         name: '정한비',
-        email: '',
+        email: 'kkhcds4@naver.com',
         description: '로맨틱펀치의 <메이데이 메이데이>의 키네틱 타이포그래피 영상이다. 몽환적이고 빠른 우주 공간을 표현하였고 밴드의 영상을 넣는 등 다양한 시도를 하였다.'
       },
     }
@@ -498,10 +534,10 @@ const tateData: Array<ArtworkType> = [
     description: "축제 때 동아리 굿즈로 제작되었다.",
     style: { marginLeft: 0 },
     data: {
-      images: [],
+      images: [artwork33_1],
       profile: {
         name: '조민준',
-        email: '',
+        email: 'minjun89@hanmail.net',
         description: '축제 때 동아리 굿즈로 제작되었다.'
       },
     }
@@ -512,10 +548,10 @@ const tateData: Array<ArtworkType> = [
     type: "EDITORIAL DESIGN",
     description: "실사 촬영한 사진에 노이즈와 배경 보정으로 레트로한 느낌을 추가하여 과거와 현재가 융합된 느낌의 표지를 디자인하였다. 공간의 특징을…",
     data: {
-      images: [],
+      images: [artwork34_1],
       profile: {
         name: '조민준',
-        email: '',
+        email: 'minjun89@hanmail.net',
         description: '실사 촬영한 사진에 노이즈와 배경 보정으로 레트로한 느낌을 추가하여 과거와 현재가 융합된 느낌의 표지를 디자인하였다. 공간의 특징을 살려 보정하였다.'
       },
     }
@@ -526,10 +562,10 @@ const tateData: Array<ArtworkType> = [
     type: "EDITORIAL DESIGN",
     description: "실사 촬영한 사진에 노이즈와 배경 보정으로 레트로한 느낌을 추가하여 과거와 현재가 융합된 느낌의 표지를 디자인하였다. 밤이지만…",
     data: {
-      images: [],
+      images: [artwork35_1],
       profile: {
         name: '조민준',
-        email: '',
+        email: 'minjun89@hanmail.net',
         description: '실사 촬영한 사진에 노이즈와 배경 보정으로 레트로한 느낌을 추가하여 과거와 현재가 융합된 느낌의 표지를 디자인하였다. 밤이지만 밝은 느낌을 주기 위해 노력했다.'
       },
     }
