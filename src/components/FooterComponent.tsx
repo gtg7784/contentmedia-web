@@ -36,6 +36,7 @@ const BoldText = styled.span`
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.2px;
+  margin-bottom: 6px;
 `;
 const IconWrap = styled.div`
   margin-top: 20px;
