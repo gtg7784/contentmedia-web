@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { observer, inject } from 'mobx-react';
 
 const Container = styled.div`
   width: 220px;
@@ -48,21 +47,15 @@ interface Props {
   index: number;
   name: string;
   style?: Object;
-  data?: DataType;
-  DetailStore?: any;
 }
 interface State { }
 
-@observer
-@inject('DetailStore')
 class ArtworkComponent extends React.Component<Props, State> {
   render(){
-    const { name, index, title, type, img, description, style, DetailStore, data } = this.props;
-  
-    const storeData: DataType = data;
+    const { name, index, title, type, img, description, style } = this.props;
 
     return (
-      <Container style={style} onClick={() => DetailStore.update(storeData)}>
+      <Container style={style}>
         <Link to={`/detail/${name}/${index}`}>
           <Image src={img}/>
           <Title>{title}</Title>
