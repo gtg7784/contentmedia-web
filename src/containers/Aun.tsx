@@ -38,6 +38,7 @@ const Description = styled.p`
   color: #3f3d56;
   margin-top: 94px;
   margin-bottom: 270px;
+  line-height: 1.4;
 `;
 const MemberWrap = styled.div`
   width: 100%;

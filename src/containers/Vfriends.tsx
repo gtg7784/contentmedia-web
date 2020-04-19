@@ -46,6 +46,7 @@ const Description = styled.p`
   color: #3f3d56;
   margin-top: 60px;
   margin-bottom: 248px;
+  line-height: 1.4;
 `;
 const PrizeWrap = styled.div`
   width: 100%;
