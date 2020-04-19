@@ -37,11 +37,13 @@ const IntroImage = styled.img`
   height: 274px;
 `;
 
-interface Props { }
+interface Props {
+  id: string;
+}
 
-const IntroComponent: React.FC<Props> = () => {
+const IntroComponent: React.FC<Props> = (props: Props) => {
   return (
-    <Container>
+    <Container id={props.id}>
       <IntroTextWrap>
         <IntroTextTypo src={introTypo} />
         <IntroText>

@@ -187,7 +187,6 @@ const getAsset = (type: clubs): clubType => {
     },
     default: {
       image: logo,
-
       menu: [
         {
           text: "HOME",

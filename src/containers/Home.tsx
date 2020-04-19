@@ -244,13 +244,13 @@ class Home extends React.Component<Props, State>{
     return(
       <Container>
         <HeaderComponent />
-        <IntroComponent/>
+        <IntroComponent id="home"/>
         <ScrollDownWrap>
           <ScrollDownText>SCROLL DOWN</ScrollDownText>
           <ScrollDownImage src={scrollDown}/>
         </ScrollDownWrap>
         <MainIllust src={mainIllust} />
-        <MembersWrap>
+        <MembersWrap id="members">
           <Title>MEMBERS</Title>
           <MembersContent>
             <img src={scrollLeftIcon} style={{ position: "absolute", top: 1480, left: 100 }} alt="" onClick={() => this.setState({ clubStatus: 0 })} />
@@ -274,7 +274,7 @@ class Home extends React.Component<Props, State>{
             <Dot style={clubStatus === 1 ? { backgroundColor: "#3f3d56" } : { backgroundColor: "#888888"}}/>
           </DotWrap>
         </MembersWrap>
-        <QnaWrap>
+        <QnaWrap id="qna">
           <Title style={{ marginTop: 171, marginBottom: 62 }}>QNA</Title>
           <QnaContent>
             {qna.map((item, index) => (
