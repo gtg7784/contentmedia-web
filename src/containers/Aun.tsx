@@ -103,7 +103,6 @@ class Aun extends React.Component<Props, State>{
               type={item.type}
               description={item.description}
               style={item.style}
-              data={item.data}
               index={index}
               key={index}
             />
