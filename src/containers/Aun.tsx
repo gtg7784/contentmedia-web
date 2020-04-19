@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import HeaderComponent from 'components/HeaderComponent';
 import ArtworkComponent from 'components/ArtworkComponent';
+import FooterComponent from 'components/FooterComponent';
 
 import aunBanner from 'assets/aun/Banner.png';
 import aunLogo from 'assets/aunLogo.svg';
@@ -236,6 +237,7 @@ class Aun extends React.Component<Props, State>{
             />
           ))}
         </ArtworkWrap>
+        <FooterComponent/>
       </Container>
     )
   }
