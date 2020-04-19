@@ -149,8 +149,8 @@ const getAsset = (type: clubs): clubType => {
           id: "#intro"
         },
         {
-          text: "ACTIVITIES",
-          id: "#activity"
+          text: "MEMBERS",
+          id: "#member"
         },
         {
           text: "ARTWORKS",
