@@ -106,9 +106,9 @@ class Vfriends extends React.Component<Props, State>{
     return(
       <Container>
         <HeaderComponent type="vfriends" />
-        <ReactPlayer url={vfirendsVideo} width="1440px" height="810px" playing />
+        <ReactPlayer url={vfirendsVideo} width="1440px" height="810px" playing id="home" />
         <Bar />
-        <Title>INTRODUCE</Title>
+        <Title id="intro">INTRODUCE</Title>
         <Illust src={vfriendsIllust} alt=""/>
         <Description>
           v.friends는 디자인의 즐거움을<br/>
@@ -126,7 +126,7 @@ class Vfriends extends React.Component<Props, State>{
           그리고 증진된 디자인 능력으로 다른 사람을 가르치면서<br/>
           스피치 능력도 기를 수 있습니다.
         </Description>
-        <Title>activities</Title>
+        <Title id="activity">activities</Title>
         <PrizeWrap>
           <PrizeComponent title={schoolTitle} number={schoolAward} />
           <PrizeComponent title={suburbTitle} number={suburbAward} />
@@ -135,7 +135,7 @@ class Vfriends extends React.Component<Props, State>{
           <WikiText>VIEW MORE</WikiText>
           <img src={arrowRight} alt=""/>
         </WikiWrap>
-        <Title>ARTWORKS</Title>
+        <Title id="artworks">ARTWORKS</Title>
         <ArtworkWrap>
           {data.map((item, index) => (
             <ArtworkComponent
