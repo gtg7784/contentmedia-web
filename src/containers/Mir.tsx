@@ -43,7 +43,7 @@ const LogoWrap = styled.div`
   align-items: center;
   margin-left: 202px;
 `;
-const Button = styled.button`
+const Button = styled.a`
   width: 240px;
   height: 64px;
   border-radius: 20px;
@@ -51,6 +51,7 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 `;
 const Illust = styled.img`
   width: 863px;
@@ -132,7 +133,7 @@ class Mir extends React.Component<Props, State>{
         <BannerWrap id="home">
           <LogoWrap>
             <Logo src={logo} alt="" style={{ marginTop: 0, marginBottom: 64 }}/>
-            <Button>
+            <Button href="#intro">
               <img src={View} alt=""/>
             </Button>
           </LogoWrap>
