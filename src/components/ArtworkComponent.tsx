@@ -37,6 +37,7 @@ const Description = styled.p`
   font-weight: 500;
   letter-spacing: 1px;
   color: #3f3d56;
+  line-height: 1.34;
 `;
 
 interface Props {
