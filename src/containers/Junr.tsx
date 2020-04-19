@@ -67,7 +67,7 @@ const ArtworkWrap = styled.div`
 `;
 
 interface Props {
-  JunrStore: ClubStoreType;
+  JunrStore?: ClubStoreType;
 };
 interface State { };
 

@@ -67,7 +67,7 @@ const ArtworkWrap = styled.div`
 `;
 
 interface Props {
-  VfriendsStore: ClubStoreType;
+  VfriendsStore?: ClubStoreType;
 };
 interface State { };
 

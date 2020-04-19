@@ -63,12 +63,12 @@ const Description = styled.p`
 `;
 
 interface Props { 
-  AunStore: ClubStoreType;
-  JunrStore: ClubStoreType;
-  MirStore: ClubStoreType
-  TateStore: ClubStoreType;
-  VfriendsStore: ClubStoreType;
-  match: {
+  AunStore?: ClubStoreType;
+  JunrStore?: ClubStoreType;
+  MirStore?: ClubStoreType
+  TateStore?: ClubStoreType;
+  VfriendsStore?: ClubStoreType;
+  match?: {
     params: {
       type: clubs;
       id: number;

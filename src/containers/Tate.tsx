@@ -65,7 +65,7 @@ const ArtworkWrap = styled.div`
 `;
 
 interface Props {
-  TateStore: ClubStoreType;
+  TateStore?: ClubStoreType;
 };
 interface State { };
 
