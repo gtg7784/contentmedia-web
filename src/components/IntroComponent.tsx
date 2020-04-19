@@ -27,6 +27,7 @@ const IntroText = styled.p`
   font-weight: bold;
   letter-spacing: 0.4px;
   color: #3f3d56;
+  line-height: 1.74;
 `;
 const IntroSpan = styled.span`
   font-weight: 700;
