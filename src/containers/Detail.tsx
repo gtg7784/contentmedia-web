@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import ReactPlayer from 'react-player';
 
 import HeaderComponent from 'components/HeaderComponent';
+import FooterComponent from 'components/FooterComponent';
 
 const Container = styled.div`
   min-width: 1440px;
@@ -138,6 +139,7 @@ class Detail extends React.Component<Props, State>{
             <Description dangerouslySetInnerHTML={{ __html: data && data.profile.description }}/>
           </ProfileWrap>
         </ContentWrap>
+        <FooterComponent/>
       </Container>
     )
   }
