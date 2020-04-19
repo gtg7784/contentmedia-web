@@ -138,8 +138,8 @@ class Aun extends React.Component<Props, State>{
     return(
       <Container>
         <HeaderComponent type="aun"/>
-        <Banner src={aunBanner}/>
-        <Title>INTRODUCE</Title>
+        <Banner src={aunBanner} id="home" />
+        <Title id="intro">INTRODUCE</Title>
         <Logo src={aunLogo}/>
         <Description>
           “아름다운 우리들의 내일을 위하여” 라는 슬로건을 가지고<br/>
@@ -156,7 +156,7 @@ class Aun extends React.Component<Props, State>{
           끊임없는 도전과 열정으로 많은 분께<br/>
           아름다운 영상을 선사하기 위해 노력할 것입니다.<br/>
         </Description>
-        <Title>MEMBERS</Title>
+        <Title id="member">MEMBERS</Title>
         <MemberWrap>
           <MemberRow>
             <MemberDirectorItem>
@@ -221,7 +221,7 @@ class Aun extends React.Component<Props, State>{
             </MemberItem>
           </MemberRow>
         </MemberWrap>
-        <Title>ARTWORKS</Title>
+        <Title id="artworks">ARTWORKS</Title>
         <ArtworkWrap>
           {data.map((item, index) => (
             <ArtworkComponent
