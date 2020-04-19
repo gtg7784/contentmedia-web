@@ -55,6 +55,7 @@ const Text = styled.div`
   font-weight: normal;
   text-align: center;
   color: #3f3d56;
+  line-height: 1.46;
 
   span {
     font-weight: bold;
