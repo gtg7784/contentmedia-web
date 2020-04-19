@@ -75,6 +75,10 @@ interface State { };
 @inject('VfriendsStore')
 @observer
 class Vfriends extends React.Component<Props, State>{
+  componentDidMount(){
+    window.scrollTo(0, 0);
+  }
+  
   render(){
     const { VfriendsStore: { data } } = this.props;
     return(

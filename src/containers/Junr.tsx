@@ -75,6 +75,10 @@ interface State { };
 @inject('JunrStore')
 @observer
 class Junr extends React.Component<Props, State>{
+  componentDidMount(){
+    window.scrollTo(0, 0);
+  }
+  
   render(){
     const { JunrStore: { data } } = this.props;
     return(

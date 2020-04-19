@@ -98,6 +98,10 @@ interface State { };
 @inject('MirStore')
 @observer
 class Mir extends React.Component<Props, State>{
+  componentDidMount(){
+    window.scrollTo(0, 0);
+  }
+  
   render(){
     const { MirStore: { data } } = this.props;
     return(

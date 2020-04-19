@@ -235,6 +235,10 @@ class Home extends React.Component<Props, State>{
     }
   }
 
+  componentDidMount(){
+    window.scrollTo(0, 0);
+  }
+
   render(){
     const { clubs, qna, clubStatus } = this.state;
     return(

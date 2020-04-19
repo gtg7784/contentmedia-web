@@ -67,6 +67,10 @@ interface State { };
 @inject('AunStore')
 @observer
 class Aun extends React.Component<Props, State>{
+  componentDidMount(){
+    window.scrollTo(0, 0);
+  }
+  
   render(){
     const { AunStore: { data } } = this.props;
     return(

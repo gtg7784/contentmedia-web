@@ -73,6 +73,10 @@ interface State { };
 @inject('TateStore')
 @observer
 class Tate extends React.Component<Props, State>{
+  componentDidMount(){
+    window.scrollTo(0, 0);
+  }
+  
   render(){
     const { TateStore: { data } } = this.props;
     return(

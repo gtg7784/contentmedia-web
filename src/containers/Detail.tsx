@@ -95,6 +95,8 @@ class Detail extends React.Component<Props, State>{
   componentDidMount(){
     const { AunStore, JunrStore, MirStore, TateStore, VfriendsStore, match: { params: { type, id }}} = this.props;
 
+    window.scrollTo(0, 0);
+
     let clubData: ClubStoreType;
     
     if(type === "aun") {
