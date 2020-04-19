@@ -7,6 +7,18 @@ import ArtworkComponent from 'components/ArtworkComponent';
 
 import aunBanner from 'assets/aun/Banner.png';
 import aunLogo from 'assets/aunLogo.svg';
+import director from 'assets/aun/director.svg';
+import subdirector from 'assets/aun/subdirector.svg';
+
+import name1 from 'assets/aun/name1.svg'
+import name2 from 'assets/aun/name2.svg'
+import name3 from 'assets/aun/name3.svg'
+import name4 from 'assets/aun/name4.svg'
+import name5 from 'assets/aun/name5.svg'
+import name6 from 'assets/aun/name6.svg'
+import name7 from 'assets/aun/name7.svg'
+import name8 from 'assets/aun/name8.svg'
+import name9 from 'assets/aun/name9.svg'
 
 const Container = styled.div`
   display: flex;
@@ -42,13 +54,14 @@ const Description = styled.p`
 `;
 const MemberWrap = styled.div`
   width: 100%;
-  height: 512px;
+  height: 446px;
   background-color: #ff703e;
   margin-top: 156px;
   margin-bottom: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 66px;
 `;
 const ArtworkWrap = styled.div`
   width: 1054px;
@@ -56,6 +69,55 @@ const ArtworkWrap = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 80px;
+`;
+const MemberRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+`;
+const MemberItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 50px;
+`;
+const MemberDirectorItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 70px;
+`;
+const MemberImage = styled.img`
+  margin-bottom: 13.4px;
+`;
+const MemberPart = styled.p`
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  color: #f4f8fc;
+`;
+const DirectorBack = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 48px;
+  background-color: #f4f8fc;
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+`;
+const MemberBack = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 36px;
+  background-color: #f4f8fc;
+  border-top-left-radius: 18px;
+  border-bottom-right-radius: 18px;
 `;
 
 interface Props {
@@ -96,7 +158,68 @@ class Aun extends React.Component<Props, State>{
         </Description>
         <Title>MEMBERS</Title>
         <MemberWrap>
-          
+          <MemberRow>
+            <MemberDirectorItem>
+              <MemberImage src={director} alt=""/>
+              <MemberPart>연출, 촬영, 음향, 편집</MemberPart>
+              <DirectorBack>
+                <img src={name1} alt=""/>
+              </DirectorBack>
+            </MemberDirectorItem>
+            <MemberDirectorItem>
+              <MemberImage src={subdirector} alt=""/>
+              <MemberPart>연기, 편집, 촬영</MemberPart>
+              <DirectorBack>
+                <img src={name2} alt=""/>
+              </DirectorBack>
+            </MemberDirectorItem>
+          </MemberRow>
+          <MemberRow style={{ marginTop: 70 }}>
+            <MemberItem>
+              <MemberPart>연출, 촬영, 편집</MemberPart>
+              <MemberBack>
+                <img src={name3} alt=""/>
+              </MemberBack>
+            </MemberItem>
+            <MemberItem>
+              <MemberPart>음향, 조명, VFX, 편집</MemberPart>
+              <MemberBack>
+                <img src={name4} alt=""/>
+              </MemberBack>
+            </MemberItem>
+            <MemberItem>
+              <MemberPart>연출, 시나리오</MemberPart>
+              <MemberBack>
+                <img src={name5} alt=""/>
+              </MemberBack>
+            </MemberItem>
+          </MemberRow>
+          <MemberRow style={{ marginTop: 63 }}>
+            <MemberItem>
+              <MemberPart>연기</MemberPart>
+              <MemberBack>
+                <img src={name6} alt=""/>
+              </MemberBack>
+            </MemberItem>
+            <MemberItem>
+              <MemberPart>연기, 슬레이터, 스크립터</MemberPart>
+              <MemberBack>
+                <img src={name7} alt=""/>
+              </MemberBack>
+            </MemberItem>
+            <MemberItem>
+              <MemberPart>촬영</MemberPart>
+              <MemberBack>
+                <img src={name8} alt=""/>
+              </MemberBack>
+            </MemberItem>
+            <MemberItem>
+              <MemberPart>편집</MemberPart>
+              <MemberBack>
+                <img src={name9} alt=""/>
+              </MemberBack>
+            </MemberItem>
+          </MemberRow>
         </MemberWrap>
         <Title>ARTWORKS</Title>
         <ArtworkWrap>
