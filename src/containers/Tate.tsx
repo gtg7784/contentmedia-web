@@ -129,7 +129,7 @@ class Tate extends React.Component<Props, State>{
           <WikiText>VIEW MORE</WikiText>
           <img src={arrowRight} alt=""/>
         </WikiWrap>
-        <Title>ARTWORKS</Title>
+        <Title id="artworks">ARTWORKS</Title>
         <ArtworkWrap>
           {data.map((item, index) => (
             <ArtworkComponent

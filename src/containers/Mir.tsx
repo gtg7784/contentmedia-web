@@ -129,7 +129,7 @@ class Mir extends React.Component<Props, State>{
     return(
       <Container>
         <HeaderComponent type="mir" />
-        <BannerWrap>
+        <BannerWrap id="home">
           <LogoWrap>
             <Logo src={logo} alt="" style={{ marginTop: 0, marginBottom: 64 }}/>
             <Button>
@@ -138,7 +138,7 @@ class Mir extends React.Component<Props, State>{
           </LogoWrap>
           <Illust src={illust} alt="" />
         </BannerWrap>
-        <Title>INTRODUCE</Title>
+        <Title id="intro">INTRODUCE</Title>
         <Logo src={logo} alt=""/>
         <Description>
           선린인터넷고등학교 콘텐츠디자인과의 <br/>
@@ -153,7 +153,7 @@ class Mir extends React.Component<Props, State>{
           <br/>
           저희와 함께 새로운 미래를 그릴 20기 신입생 여러분들을 기다립니다!
         </Description>
-        <Title>activities</Title>
+        <Title id="activity">activities</Title>
         <PrizeWrap>
           <PrizeComponent title={schoolTitle} number={schoolAward} />
           <PrizeComponent title={suburbTitle} number={suburbAward} />
@@ -162,7 +162,7 @@ class Mir extends React.Component<Props, State>{
           <WikiText>VIEW MORE</WikiText>
           <img src={arrowRight} alt=""/>
         </WikiWrap>
-        <Title>ARTWORKS</Title>
+        <Title id="artworks">ARTWORKS</Title>
         <ArtworkWrap>
           {data.map((item, index) => (
             <ArtworkComponent

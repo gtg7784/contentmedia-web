@@ -106,9 +106,9 @@ class Junr extends React.Component<Props, State>{
     return(
       <Container>
         <HeaderComponent type="junr"/>
-        <ReactPlayer url={banner} width="1440px" height="810px" playing />
+        <ReactPlayer url={banner} width="1440px" height="810px" playing id="home"/>
         <Bar />
-        <Title>INTRODUCE</Title>
+        <Title id="intro">INTRODUCE</Title>
         <Logo src={logo} alt=""/>
         <Description>
           자의누리는 교내 최고의 영상 전문 동아리로 <br/>
@@ -125,7 +125,7 @@ class Junr extends React.Component<Props, State>{
           또한 다양한 교내 교외의 공모전, <br/>
           대회에 참여하고 수상 기록을 쌓아 나가실 수 있습니다<br/>
         </Description>
-        <Title>activities</Title>
+        <Title id="activity">activities</Title>
         <PrizeWrap>
           <PrizeComponent title={schoolTitle} number={schoolAward} />
           <PrizeComponent title={projectTitle} number={projectCount} />
@@ -134,7 +134,7 @@ class Junr extends React.Component<Props, State>{
           <WikiText>VIEW MORE</WikiText>
           <img src={arrowRight} alt=""/>
         </WikiWrap>
-        <Title>ARTWORKS</Title>
+        <Title id="artworks">ARTWORKS</Title>
         <ArtworkWrap>
           {data.map((item, index) => (
             <ArtworkComponent
