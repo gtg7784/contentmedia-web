@@ -23,13 +23,7 @@ declare global {
     style?: Object;
     data: DataType;
   }
-
-  export interface DetailStoreType {
-    data: DataType;
-    update?: (data: DetailType) => any;
-    updateType?: (data: string) => void;
-  }
-
+  
   export interface ClubStoreType {
     data: Array<ArtworkType>;
     name: clubs;
