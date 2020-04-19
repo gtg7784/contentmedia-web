@@ -40,6 +40,7 @@ const AText = styled.p`
   letter-spacing: 0.1px;
   color: #3f3d56;
   margin-top: 12px;
+  line-height: 1.48;
 `;
 
 interface Props {
