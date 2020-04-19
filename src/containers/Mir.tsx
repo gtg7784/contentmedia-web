@@ -14,6 +14,7 @@ import suburbTitle from 'assets/mir/suburbAward.svg';
 import schoolAward from 'assets/mir/15.svg';
 import suburbAward from 'assets/mir/3.svg';
 import View from 'assets/mir/view.svg';
+import arrowRight from 'assets/arrowRight.svg';
 
 const Container = styled.div`
   display: flex;
@@ -80,7 +81,6 @@ const PrizeWrap = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 156px;
-  margin-bottom: 320px;
 `;
 const ArtworkWrap = styled.div`
   width: 1054px;
@@ -88,6 +88,28 @@ const ArtworkWrap = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 80px;
+`;
+const WikiWrap = styled.a`
+  border-radius: 12px;
+  box-shadow: 0 0 16px 0 rgba(34, 34, 34, 0.1);
+  background-color: #f4f8fc;
+  padding: 16px 17px 15px 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 171px;
+  margin-top: 90px;
+  text-decoration: none;
+`
+const WikiText = styled.span`
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2.1px;
+  color: #3f3d56;
+  font-family: 'Bebas Neue', cursive;
+  margin-right: 16px;
+  text-decoration: none;
 `;
 
 interface Props {
@@ -136,6 +158,10 @@ class Mir extends React.Component<Props, State>{
           <PrizeComponent title={schoolTitle} number={schoolAward} />
           <PrizeComponent title={suburbTitle} number={suburbAward} />
         </PrizeWrap>
+        <WikiWrap href="https://sunrinwiki.layer7.kr/index.php/MIR">
+          <WikiText>VIEW MORE</WikiText>
+          <img src={arrowRight} alt=""/>
+        </WikiWrap>
         <Title>ARTWORKS</Title>
         <ArtworkWrap>
           {data.map((item, index) => (
