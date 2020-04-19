@@ -60,6 +60,7 @@ const Description = styled.p`
   letter-spacing: 0.5px;
   text-align: right;
   color: #3f3d56;
+  line-height: 1.52;
 `;
 
 interface Props { 
