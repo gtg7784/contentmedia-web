@@ -90,7 +90,7 @@ const ArtworkWrap = styled.div`
 `;
 
 interface Props {
-  MirStore?: ClubStoreType;
+  MirStore: ClubStoreType;
 };
 interface State { };
 

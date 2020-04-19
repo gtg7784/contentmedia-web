@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { observer, inject } from 'mobx-react';
 
 import GlobalStyles from 'globalStyles';
+// import scrollTop from 'utils/scrollTop';
 
 import data from 'data';
 
@@ -49,30 +50,14 @@ class App extends React.Component<Props, State>{
       <Container>
         <GlobalStyles />
         <Switch>
-          <Route path="/">
-            <Home/>
-          </Route>
-          <Route path="/vfriends">
-            <Vfriends/>
-          </Route>
-          <Route path="/aun">
-            <Aun/>
-          </Route>
-          <Route path="/tate">
-            <Tate/>
-          </Route>
-          <Route path="/junr">
-            <Junr/>
-          </Route>
-          <Route path="/mir">
-            <Mir/>
-          </Route>
-          <Route path="/detail/:type/:id">
-            <Detail/>
-          </Route>
-          <Route>
-            <Notfound/>
-          </Route>
+          <Route path="/" exact component={Home} />
+          <Route path="/vfriends" exact component={Vfriends} />
+          <Route path="/aun" exact component={Aun} />
+          <Route path="/tate" exact component={Tate}/>
+          <Route path="/junr" exact component={Junr} />
+          <Route path="/mir" exact component={Mir} />
+          <Route path="/detail/:type/:id" exact component={Detail}/>
+          <Route exact component={Notfound} />
         </Switch>
       </Container>
     );

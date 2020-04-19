@@ -58,7 +58,7 @@ const ArtworkWrap = styled.div`
 `;
 
 interface Props {
-  AunStore?: ClubStoreType;
+  AunStore: ClubStoreType;
 };
 interface State { };
 
