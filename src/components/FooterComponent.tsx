@@ -43,16 +43,25 @@ const IconWrap = styled.div`
   display: flex;
   flex-direction: row;
 `;
-const Icon = styled.a`
+const IconButton = styled.a`
   width: 42px;
   height: 42px;
   background-color: #fff;
   border-radius: 21px;
   display: flex;
   flex-direction: row;
-  align-item: center;
+  align-items: center;
   justify-content: center;
 `;
+const Icon = styled.img`
+  width: ${(props: StyleProps) => props.width};
+  height: ${(props: StyleProps) => props.height};
+`;
+
+interface StyleProps {
+  width: string;
+  height: string;
+}
 interface Props { }
 
 const FooterComponent: React.FC<Props> = () => {
@@ -86,15 +95,15 @@ const FooterComponent: React.FC<Props> = () => {
         </Text>
       </ItemWrap>
       <IconWrap>
-        <Icon style={{ marginRight: 32 }} href="https://www.youtube.com/channel/UCTuj8x2de_3v6lxxFw_whpw">
-          <img src={youtube} alt=""/>
-        </Icon>
-        <Icon style={{ marginRight: 32 }} href="https://www.facebook.com/선린인터넷고등학교-콘텐츠디자인과-시연회-106949140954012/">
-          <img src={facebook} alt=""/>
-        </Icon>
-        <Icon href="http://sunrint.hs.kr/index.do">
-          <img src={sunrin} alt=""/>
-        </Icon>
+        <IconButton style={{ marginRight: 32 }} href="https://www.youtube.com/channel/UCTuj8x2de_3v6lxxFw_whpw">
+          <Icon src={youtube} alt="" width="22px" height="16px"/>
+        </IconButton>
+        <IconButton style={{ marginRight: 32 }} href="https://www.facebook.com/선린인터넷고등학교-콘텐츠디자인과-시연회-106949140954012/">
+          <Icon src={facebook} alt="" width="10px" height="22px"/>
+        </IconButton>
+        <IconButton href="http://sunrint.hs.kr/index.do">
+          <Icon src={sunrin} alt="" width="16px" height="22px"/>
+        </IconButton>
       </IconWrap>
     </Container>
   )
