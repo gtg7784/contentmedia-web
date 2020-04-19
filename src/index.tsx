@@ -2,6 +2,7 @@ import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'mobx-react';
+import 'react-app-polyfill/ie9';
 
 import App from 'containers/App';
 import * as serviceWorker from './serviceWorker';
