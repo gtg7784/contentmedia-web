@@ -31,7 +31,9 @@ module.exports = {
           "extensions": [".js", ".jsx", ".ts", ".tsx"]
         }
       },
-      
+      "import/parsers": {
+        "typescript-eslint-parser": [".ts", ".tsx"]
+      }
     },
     rules: {
       "react/jsx-filename-extension": [1, {

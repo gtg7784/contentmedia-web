@@ -239,6 +239,12 @@ class Home extends React.Component<Props, State> {
     window.scrollTo(0, 0);
   }
 
+  onChangeStatus = (key: number) => {
+    this.setState({
+      clubStatus: key,
+    });
+  }
+
   render() {
     const { clubs, qna, clubStatus } = this.state;
     return (
@@ -253,7 +259,7 @@ class Home extends React.Component<Props, State> {
         <MembersWrap id="members">
           <Title>MEMBERS</Title>
           <MembersContent>
-            <img src={scrollLeftIcon} style={{ position: 'absolute', top: 1480, left: 100 }} alt="" onClick={() => this.setState({ clubStatus: 0 })} />
+            <img src={scrollLeftIcon} style={{ position: 'absolute', top: 1480, left: 100 }} alt="" onClick={() => this.onChangeStatus(0)} />
             <ClubsWrap>
               {clubs.map((item) => (
                 <ClubComponent
@@ -268,7 +274,7 @@ class Home extends React.Component<Props, State> {
                 />
               ))}
             </ClubsWrap>
-            <img src={scrollRighttIcon} style={{ position: 'absolute', top: 1480, right: 100 }} alt="" onClick={() => this.setState({ clubStatus: 1 })} />
+            <img src={scrollRighttIcon} style={{ position: 'absolute', top: 1480, right: 100 }} alt="" onClick={() => this.onChangeStatus(1)} />
           </MembersContent>
           <DotWrap>
             <Dot style={clubStatus === 0 ? { backgroundColor: '#3f3d56' } : { backgroundColor: '#888888' }} />
@@ -278,8 +284,13 @@ class Home extends React.Component<Props, State> {
         <QnaWrap id="qna">
           <Title style={{ marginTop: 171, marginBottom: 62 }}>QNA</Title>
           <QnaContent>
-            {qna.map((item, index) => (
-              <QnaComponent question={item.question} answer={item.answer} style={item.style} key={index} />
+            {qna.map((item) => (
+              <QnaComponent
+                question={item.question}
+                answer={item.answer}
+                style={item.style}
+                key={item.question}
+              />
             ))}
           </QnaContent>
         </QnaWrap>
