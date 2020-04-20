@@ -291,13 +291,13 @@ const mirData: Array<ArtworkType> = [
     thumbnail: artwork17,
     title: 'happy_김혜진',
     type: 'ILLUSTRATION',
-    description: '채도가 높고 대조를 이루는 색을 사용해 화려함을 표현했다. 두 소녀가 입고있는 외투는 미르의 야구자켓이며, 기하학적인 도형을 배경으로…',
+    description: '신비로운 느낌을 주기 위해 보라 계열을 사용하여 작업한 딸기 케이크 픽셀아트입니다. ',
     data: {
       images: [artwork16_1],
       profile: {
         name: '김혜진',
         email: 'jinjins0629@gmail.com',
-        description: '채도가 높고 대조를 이루는 색을 사용해 화려함을 표현했다. 두 소녀가 입고있는 외투는 미르의 야구자켓이며, 기하학적인 도형을 배경으로 두어 심심하지 않게 했다.',
+        description: '게임 걸즈밴드파티의 팬아트이다. 각 캐릭터가 위에서 아래로 떨어지는 모습을 그렸다. 캐릭터가 가지고있는 각각의 성격과 특징을 그려냈고 전체적으로 귀여운 분위기를 자아낸다.',
       },
     },
   },
@@ -305,14 +305,14 @@ const mirData: Array<ArtworkType> = [
     thumbnail: artwork16,
     title: '레트로 미르_김혜진',
     type: 'ILLUSTRATION',
-    description: '신비로운 느낌을 주기 위해 보라 계열을 사용하여 작업한 딸기 케이크 픽셀아트입니다. ',
+    description: '채도가 높고 대조를 이루는 색을 사용해 화려함을 표현했다. 두 소녀가 입고있는 외투는 미르의 야구자켓이며, 기하학적인 도형을 배경으로…',
     style: { marginLeft: 0 },
     data: {
       images: [artwork17_1],
       profile: {
         name: '김혜진',
         email: 'jinjins0629@gmail.com',
-        description: '게임 걸즈밴드파티의 팬아트이다. 각 캐릭터가 위에서 아래로 떨어지는 모습을 그렸다. 캐릭터가 가지고있는 각각의 성격과 특징을 그려냈고 전체적으로 귀여운 분위기를 자아낸다.',
+        description: '채도가 높고 대조를 이루는 색을 사용해 화려함을 표현했다. 두 소녀가 입고있는 외투는 미르의 야구자켓이며, 기하학적인 도형을 배경으로 두어 심심하지 않게 했다.',
       },
     },
   },
