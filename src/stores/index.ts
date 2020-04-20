@@ -5,11 +5,11 @@ import tateStore from './tateStore';
 import vfriendsStore from './vfriendsStore';
 
 const stores = {
-    AunStore: aunStore,
-    JunrStore: junrStore,
-    MirStore: mirStore,
-    TateStore: tateStore,
-    VfriendsStore: vfriendsStore
+  AunStore: aunStore,
+  JunrStore: junrStore,
+  MirStore: mirStore,
+  TateStore: tateStore,
+  VfriendsStore: vfriendsStore,
 };
 
 export default stores;
