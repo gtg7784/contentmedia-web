@@ -130,8 +130,8 @@ class Detail extends React.Component<Props, State> {
         <HeaderComponent type={type} />
         <ContentWrap>
           <ArtworkWrap>
-            {data && data.images.map((item: string, index: number) => (
-              <Image src={item} alt="" key={index} />
+            {data && data.images.map((item) => (
+              <Image src={item} alt="" key={item} />
             ))}
             {data && data.link && <ReactPlayer url={data.link} width="600px" height="400px" />}
           </ArtworkWrap>

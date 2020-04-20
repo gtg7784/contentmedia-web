@@ -255,12 +255,12 @@ class Home extends React.Component<Props, State> {
           <MembersContent>
             <img src={scrollLeftIcon} style={{ position: 'absolute', top: 1480, left: 100 }} alt="" onClick={() => this.setState({ clubStatus: 0 })} />
             <ClubsWrap>
-              {clubs.map((item, index) => (
+              {clubs.map((item) => (
                 <ClubComponent
                   to={item.to}
                   content={item.content}
                   logo={item.logo}
-                  key={index}
+                  key={item.to}
                   style={item.style}
                   top={item.top}
                   bottom={item.bottom}

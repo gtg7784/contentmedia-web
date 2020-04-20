@@ -102,7 +102,7 @@ const WikiWrap = styled.a`
   margin-bottom: 171px;
   margin-top: 90px;
   text-decoration: none;
-`
+`;
 const WikiText = styled.span`
   font-size: 24px;
   font-weight: bold;
@@ -115,43 +115,54 @@ const WikiText = styled.span`
 
 interface Props {
   MirStore: ClubStoreType;
-};
-interface State { };
+}
+interface State { }
 
 @inject('MirStore')
 @observer
-class Mir extends React.Component<Props, State>{
-  componentDidMount(){
+class Mir extends React.Component<Props, State> {
+  componentDidMount() {
     window.scrollTo(0, 0);
   }
-  
-  render(){
+
+  render() {
     const { MirStore: { data } } = this.props;
-    return(
+    return (
       <Container>
         <HeaderComponent type="mir" />
         <BannerWrap id="home">
           <LogoWrap>
-            <Logo src={logo} alt="" style={{ marginTop: 0, marginBottom: 64 }}/>
+            <Logo src={logo} alt="" style={{ marginTop: 0, marginBottom: 64 }} />
             <Button href="#intro">
-              <img src={View} alt=""/>
+              <img src={View} alt="" />
             </Button>
           </LogoWrap>
           <Illust src={illust} alt="" />
         </BannerWrap>
         <Title id="intro">INTRODUCE</Title>
-        <Logo src={logo} alt=""/>
+        <Logo src={logo} alt="" />
         <Description>
-          선린인터넷고등학교 콘텐츠디자인과의 <br/>
-          유일한 일러스트레이션 전문동아리인 MIR입니다.<br/>
-          <br/>
-          인체 구조, 캐릭터 데포르메, 웹툰 기초, 애니메이션 제작 등 <br/>
-          다양한 커리큘럼으로 이루어진 동아리 수업과 <br/>
-          클립스튜디오, 포토샵 등의 프로그램을 연계한 <br/>
-          체계화 된 수업으로 전문 일러스트레이터를 양성합니다.<br/>
-          <br/>
-          올해로 20년을 맞이한 오랜 역사를 자랑하는 미르!<br/>
-          <br/>
+          선린인터넷고등학교 콘텐츠디자인과의
+          {' '}
+          <br />
+          유일한 일러스트레이션 전문동아리인 MIR입니다.
+          <br />
+          <br />
+          인체 구조, 캐릭터 데포르메, 웹툰 기초, 애니메이션 제작 등
+          {' '}
+          <br />
+          다양한 커리큘럼으로 이루어진 동아리 수업과
+          {' '}
+          <br />
+          클립스튜디오, 포토샵 등의 프로그램을 연계한
+          {' '}
+          <br />
+          체계화 된 수업으로 전문 일러스트레이터를 양성합니다.
+          <br />
+          <br />
+          올해로 20년을 맞이한 오랜 역사를 자랑하는 미르!
+          <br />
+          <br />
           저희와 함께 새로운 미래를 그릴 20기 신입생 여러분들을 기다립니다!
         </Description>
         <Title id="activity">activities</Title>
@@ -161,7 +172,7 @@ class Mir extends React.Component<Props, State>{
         </PrizeWrap>
         <WikiWrap href="https://sunrinwiki.layer7.kr/index.php/MIR">
           <WikiText>VIEW MORE</WikiText>
-          <img src={arrowRight} alt=""/>
+          <img src={arrowRight} alt="" />
         </WikiWrap>
         <Title id="artworks">ARTWORKS</Title>
         <ArtworkWrap>
@@ -174,13 +185,13 @@ class Mir extends React.Component<Props, State>{
               description={item.description}
               style={item.style}
               index={index}
-              key={index}
+              key={item.title}
             />
           ))}
         </ArtworkWrap>
-        <FooterComponent/>
+        <FooterComponent />
       </Container>
-    )
+    );
   }
 }
 

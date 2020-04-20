@@ -162,7 +162,7 @@ class Junr extends React.Component<Props, State> {
               description={item.description}
               style={item.style}
               index={index}
-              key={index}
+              key={item.title}
             />
           ))}
         </ArtworkWrap>
