@@ -1,4 +1,4 @@
 declare module '*.webm' {
-	const webm: any;
+	const webm: unknown;
 	export default webm;
 }
