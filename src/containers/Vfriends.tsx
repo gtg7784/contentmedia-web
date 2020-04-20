@@ -115,7 +115,7 @@ class Vfriends extends React.Component<Props, State> {
           <br />
           다양한 사람들과 나누며 성장하는 곳으로,
           <br />
-          콘텐츠디자인과 "디자인 교육 봉사 동아리"입니다.
+          콘텐츠디자인과 &ldquo;디자인 교육 봉사 동아리&rdquo;입니다.
           <br />
           여러가지 디자인을 배움과 동시에 아는 것을 공유합니다.
           <br />
@@ -156,8 +156,8 @@ class Vfriends extends React.Component<Props, State> {
               type={item.type}
               description={item.description}
               style={item.style}
+              key={item.title}
               index={index}
-              key={`artwork-${index}`}
             />
           ))}
         </ArtworkWrap>
