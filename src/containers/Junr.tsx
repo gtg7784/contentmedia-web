@@ -139,7 +139,7 @@ class Junr extends React.Component<Props, State> {
           또한 다양한 교내 교외의 공모전,
           {' '}
           <br />
-          대회에 참여하고 수상 기록을 쌓아 나가실 수 있습니다
+          대회에 참여하고 수상 기록을 쌓아 나가실 수 있습니다
           <br />
         </Description>
         <Title id="activity">activities</Title>
