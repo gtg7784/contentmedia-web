@@ -1,4 +1,4 @@
 declare module '*.webm' {
-	const webm: unknown;
+	const webm: string | string[] | SourceProps[] | MediaStream;
 	export default webm;
 }
