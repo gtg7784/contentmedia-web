@@ -11,15 +11,15 @@ import aunLogo from 'assets/aunLogo.svg';
 import director from 'assets/aun/director.svg';
 import subdirector from 'assets/aun/subdirector.svg';
 
-import name1 from 'assets/aun/name1.svg'
-import name2 from 'assets/aun/name2.svg'
-import name3 from 'assets/aun/name3.svg'
-import name4 from 'assets/aun/name4.svg'
-import name5 from 'assets/aun/name5.svg'
-import name6 from 'assets/aun/name6.svg'
-import name7 from 'assets/aun/name7.svg'
-import name8 from 'assets/aun/name8.svg'
-import name9 from 'assets/aun/name9.svg'
+import name1 from 'assets/aun/name1.svg';
+import name2 from 'assets/aun/name2.svg';
+import name3 from 'assets/aun/name3.svg';
+import name4 from 'assets/aun/name4.svg';
+import name5 from 'assets/aun/name5.svg';
+import name6 from 'assets/aun/name6.svg';
+import name7 from 'assets/aun/name7.svg';
+import name8 from 'assets/aun/name8.svg';
+import name9 from 'assets/aun/name9.svg';
 
 const Container = styled.div`
   display: flex;
@@ -123,55 +123,65 @@ const MemberBack = styled.div`
 
 interface Props {
   AunStore: ClubStoreType;
-};
-interface State { };
+}
+interface State { }
 
 
 @inject('AunStore')
 @observer
-class Aun extends React.Component<Props, State>{
-  componentDidMount(){
+class Aun extends React.Component<Props, State> {
+  componentDidMount() {
     window.scrollTo(0, 0);
   }
-  
-  render(){
+
+  render() {
     const { AunStore: { data } } = this.props;
-    return(
+    return (
       <Container>
-        <HeaderComponent type="aun"/>
+        <HeaderComponent type="aun" />
         <Banner src={aunBanner} id="home" />
         <Title id="intro">INTRODUCE</Title>
-        <Logo src={aunLogo}/>
+        <Logo src={aunLogo} />
         <Description>
-          “아름다운 우리들의 내일을 위하여” 라는 슬로건을 가지고<br/>
-          활동하는 아우내는 선린인터넷고등학교의<br/>
-          실사영상 제작동아리입니다.<br/>
-          <br/>
-          설립 당시에는 연극부였으나,<br/>
-          더욱 다양한 종합예술로의 영역으로 확장하고자<br/>
-          실사영상 제작동아리로 변경해 새롭게 시작하였습니다.<br/>
-          <br/>
-          우리 동아리는 다양한 콘텐츠 제작을 통해<br/>
-          부원들의 아름다운 내일을 개척하고자 합니다.<br/>
-          <br/>
-          끊임없는 도전과 열정으로 많은 분께<br/>
-          아름다운 영상을 선사하기 위해 노력할 것입니다.<br/>
+          “아름다운 우리들의 내일을 위하여” 라는 슬로건을 가지고
+          <br />
+          활동하는 아우내는 선린인터넷고등학교의
+          <br />
+          실사영상 제작동아리입니다.
+          <br />
+          <br />
+          설립 당시에는 연극부였으나,
+          <br />
+          더욱 다양한 종합예술로의 영역으로 확장하고자
+          <br />
+          실사영상 제작동아리로 변경해 새롭게 시작하였습니다.
+          <br />
+          <br />
+          우리 동아리는 다양한 콘텐츠 제작을 통해
+          <br />
+          부원들의 아름다운 내일을 개척하고자 합니다.
+          <br />
+          <br />
+          끊임없는 도전과 열정으로 많은 분께
+          <br />
+          아름다운 영상을 선사하기 위해 노력할 것입니다.
+          <br />
         </Description>
         <Title id="member">MEMBERS</Title>
         <MemberWrap>
           <MemberRow>
             <MemberDirectorItem>
-              <MemberImage src={director} alt=""/>
+              <MemberImage src={director} alt="" />
               <MemberPart>연출, 촬영, 음향, 편집</MemberPart>
               <DirectorBack>
-                <img src={name1} alt=""/>
+                <img src={name1} alt="" />
               </DirectorBack>
             </MemberDirectorItem>
             <MemberDirectorItem>
-              <MemberImage src={subdirector} alt=""/>
+              <MemberImage src={subdirector} alt="" />
               <MemberPart>연기, 편집, 촬영</MemberPart>
               <DirectorBack>
-                <img src={name2} alt=""/>
+                <img src={name2} alt="" />
               </DirectorBack>
             </MemberDirectorItem>
           </MemberRow>
@@ -179,19 +189,19 @@ class Aun extends React.Component<Props, State>{
             <MemberItem>
               <MemberPart>연출, 촬영, 편집</MemberPart>
               <MemberBack>
-                <img src={name3} alt=""/>
+                <img src={name3} alt="" />
               </MemberBack>
             </MemberItem>
             <MemberItem>
               <MemberPart>음향, 조명, VFX, 편집</MemberPart>
               <MemberBack>
-                <img src={name4} alt=""/>
+                <img src={name4} alt="" />
               </MemberBack>
             </MemberItem>
             <MemberItem>
               <MemberPart>연출, 시나리오</MemberPart>
               <MemberBack>
-                <img src={name5} alt=""/>
+                <img src={name5} alt="" />
               </MemberBack>
             </MemberItem>
           </MemberRow>
@@ -199,25 +209,25 @@ class Aun extends React.Component<Props, State>{
             <MemberItem>
               <MemberPart>연기</MemberPart>
               <MemberBack>
-                <img src={name6} alt=""/>
+                <img src={name6} alt="" />
               </MemberBack>
             </MemberItem>
             <MemberItem>
               <MemberPart>연기, 슬레이터, 스크립터</MemberPart>
               <MemberBack>
-                <img src={name7} alt=""/>
+                <img src={name7} alt="" />
               </MemberBack>
             </MemberItem>
             <MemberItem>
               <MemberPart>촬영</MemberPart>
               <MemberBack>
-                <img src={name8} alt=""/>
+                <img src={name8} alt="" />
               </MemberBack>
             </MemberItem>
             <MemberItem>
               <MemberPart>편집</MemberPart>
               <MemberBack>
-                <img src={name9} alt=""/>
+                <img src={name9} alt="" />
               </MemberBack>
             </MemberItem>
           </MemberRow>
@@ -237,9 +247,9 @@ class Aun extends React.Component<Props, State>{
             />
           ))}
         </ArtworkWrap>
-        <FooterComponent/>
+        <FooterComponent />
       </Container>
-    )
+    );
   }
 }
 

@@ -78,7 +78,7 @@ const WikiWrap = styled.a`
   margin-bottom: 171px;
   margin-top: 90px;
   text-decoration: none;
-`
+`;
 const WikiText = styled.span`
   font-size: 24px;
   font-weight: bold;
@@ -91,39 +91,50 @@ const WikiText = styled.span`
 
 interface Props {
   VfriendsStore: ClubStoreType;
-};
-interface State { };
+}
+interface State { }
 
 @inject('VfriendsStore')
 @observer
-class Vfriends extends React.Component<Props, State>{
-  componentDidMount(){
+class Vfriends extends React.Component<Props, State> {
+  componentDidMount() {
     window.scrollTo(0, 0);
   }
-  
-  render(){
+
+  render() {
     const { VfriendsStore: { data } } = this.props;
-    return(
+    return (
       <Container>
         <HeaderComponent type="vfriends" />
         <ReactPlayer url={vfirendsVideo} width="1440px" height="810px" playing id="home" />
         <Bar />
         <Title id="intro">INTRODUCE</Title>
-        <Illust src={vfriendsIllust} alt=""/>
+        <Illust src={vfriendsIllust} alt="" />
         <Description>
-          v.friends는 디자인의 즐거움을<br/>
-          다양한 사람들과 나누며 성장하는 곳으로,<br/>
-          콘텐츠디자인과 "디자인 교육 봉사 동아리"입니다.<br/>
-          여러가지 디자인을 배움과 동시에 아는 것을 공유합니다.<br/>
-          <br/>
-          v.friends는 2019년 멀티미디어과<br/>
-          신입생 특별교육을 시작으로 1, 2기 자율동아리로 활동을 했으며,<br/>
-          2020년 학과명 변경을 기점으로<br/>
-          콘텐츠다자인과 소속동아리가 되었습니다.<br/>
-          <br/>
-          v.friends에선 포토샵, 일러스트레이터, XD, 인디자인,<br/>
-          에프터 이펙트 등 다양한 디자인 툴을 배울 수 있습니다.<br/>
-          그리고 증진된 디자인 능력으로 다른 사람을 가르치면서<br/>
+          v.friends는 디자인의 즐거움을
+          <br />
+          다양한 사람들과 나누며 성장하는 곳으로,
+          <br />
+          콘텐츠디자인과 "디자인 교육 봉사 동아리"입니다.
+          <br />
+          여러가지 디자인을 배움과 동시에 아는 것을 공유합니다.
+          <br />
+          <br />
+          v.friends는 2019년 멀티미디어과
+          <br />
+          신입생 특별교육을 시작으로 1, 2기 자율동아리로 활동을 했으며,
+          <br />
+          2020년 학과명 변경을 기점으로
+          <br />
+          콘텐츠다자인과 소속동아리가 되었습니다.
+          <br />
+          <br />
+          v.friends에선 포토샵, 일러스트레이터, XD, 인디자인,
+          <br />
+          에프터 이펙트 등 다양한 디자인 툴을 배울 수 있습니다.
+          <br />
+          그리고 증진된 디자인 능력으로 다른 사람을 가르치면서
+          <br />
           스피치 능력도 기를 수 있습니다.
         </Description>
         <Title id="activity">activities</Title>
@@ -133,7 +144,7 @@ class Vfriends extends React.Component<Props, State>{
         </PrizeWrap>
         <WikiWrap href="https://sunrinwiki.layer7.kr/index.php/V.friends">
           <WikiText>VIEW MORE</WikiText>
-          <img src={arrowRight} alt=""/>
+          <img src={arrowRight} alt="" />
         </WikiWrap>
         <Title id="artworks">ARTWORKS</Title>
         <ArtworkWrap>
@@ -146,13 +157,13 @@ class Vfriends extends React.Component<Props, State>{
               description={item.description}
               style={item.style}
               index={index}
-              key={index}
+              key={`artwork-${index}`}
             />
           ))}
         </ArtworkWrap>
-        <FooterComponent/>
+        <FooterComponent />
       </Container>
-    )
+    );
   }
 }
 

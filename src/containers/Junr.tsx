@@ -78,7 +78,7 @@ const WikiWrap = styled.a`
   margin-bottom: 171px;
   margin-top: 90px;
   text-decoration: none;
-`
+`;
 const WikiText = styled.span`
   font-size: 24px;
   font-weight: bold;
@@ -91,39 +91,56 @@ const WikiText = styled.span`
 
 interface Props {
   JunrStore: ClubStoreType;
-};
-interface State { };
+}
+interface State { }
 
 @inject('JunrStore')
 @observer
-class Junr extends React.Component<Props, State>{
-  componentDidMount(){
+class Junr extends React.Component<Props, State> {
+  componentDidMount() {
     window.scrollTo(0, 0);
   }
-  
-  render(){
+
+  render() {
     const { JunrStore: { data } } = this.props;
-    return(
+    return (
       <Container>
-        <HeaderComponent type="junr"/>
-        <ReactPlayer url={banner} width="1440px" height="810px" playing id="home"/>
+        <HeaderComponent type="junr" />
+        <ReactPlayer url={banner} width="1440px" height="810px" playing id="home" />
         <Bar />
         <Title id="intro">INTRODUCE</Title>
-        <Logo src={logo} alt=""/>
+        <Logo src={logo} alt="" />
         <Description>
-          자의누리는 교내 최고의 영상 전문 동아리로 <br/>
-          2020년도 현재까지 그 전통을 이어오고 있습니다. 
-          <br/>
-          자의누리에서는 애프터이펙트를 활용한 모션그래픽과 <br/>
-          프리미어프로를 사용하는 실사 영상 촬영 및 편집을 <br/>
-          배워 가실 수 있습니다.<br/>
-          <br/>
-          기초부터 시작하는 체계적인 커리큘럼과 <br/>
-          12명의 선배와의 선후배 1:1 멘토링 시스템을 통해 <br/>
-          확실하게 영상 감각과 실력을 향상시켜 <br/>
-          나갈 수 있도록 노력하고 있습니다<br/>
-          또한 다양한 교내 교외의 공모전, <br/>
-          대회에 참여하고 수상 기록을 쌓아 나가실 수 있습니다<br/>
+          자의누리는 교내 최고의 영상 전문 동아리로
+          {' '}
+          <br />
+          2020년도 현재까지 그 전통을 이어오고 있습니다.
+          <br />
+          자의누리에서는 애프터이펙트를 활용한 모션그래픽과
+          {' '}
+          <br />
+          프리미어프로를 사용하는 실사 영상 촬영 및 편집을
+          {' '}
+          <br />
+          배워 가실 수 있습니다.
+          <br />
+          <br />
+          기초부터 시작하는 체계적인 커리큘럼과
+          {' '}
+          <br />
+          12명의 선배와의 선후배 1:1 멘토링 시스템을 통해
+          {' '}
+          <br />
+          확실하게 영상 감각과 실력을 향상시켜
+          {' '}
+          <br />
+          나갈 수 있도록 노력하고 있습니다
+          <br />
+          또한 다양한 교내 교외의 공모전,
+          {' '}
+          <br />
+          대회에 참여하고 수상 기록을 쌓아 나가실 수 있습니다
+          <br />
         </Description>
         <Title id="activity">activities</Title>
         <PrizeWrap>
@@ -132,7 +149,7 @@ class Junr extends React.Component<Props, State>{
         </PrizeWrap>
         <WikiWrap href="https://sunrinwiki.layer7.kr/index.php/%EC%9E%90%EC%9D%98%EB%88%84%EB%A6%AC">
           <WikiText>VIEW MORE</WikiText>
-          <img src={arrowRight} alt=""/>
+          <img src={arrowRight} alt="" />
         </WikiWrap>
         <Title id="artworks">ARTWORKS</Title>
         <ArtworkWrap>
@@ -149,9 +166,9 @@ class Junr extends React.Component<Props, State>{
             />
           ))}
         </ArtworkWrap>
-        <FooterComponent/>
+        <FooterComponent />
       </Container>
-    )
+    );
   }
 }
 

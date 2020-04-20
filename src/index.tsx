@@ -4,9 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'mobx-react';
 
 import App from 'containers/App';
-import * as serviceWorker from './serviceWorker';
-
 import stores from 'stores';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <Provider {...stores}>
@@ -14,7 +13,7 @@ ReactDOM.render(
       <App />
     </BrowserRouter>
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change

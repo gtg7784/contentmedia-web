@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { hot } from 'react-hot-loader'
+import { hot } from 'react-hot-loader';
 import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import { observer, inject } from 'mobx-react';
@@ -35,9 +35,11 @@ interface State { }
 
 @inject('AunStore', 'JunrStore', 'MirStore', 'TateStore', 'VfriendsStore')
 @observer
-class App extends React.Component<Props, State>{
-  componentDidMount(){
-    const { AunStore, JunrStore, MirStore, TateStore, VfriendsStore } = this.props;
+class App extends React.Component<Props, State> {
+  componentDidMount() {
+    const {
+      AunStore, JunrStore, MirStore, TateStore, VfriendsStore,
+    } = this.props;
     AunStore.updateData(data.aunData);
     JunrStore.updateData(data.junrData);
     MirStore.updateData(data.mirData);
@@ -45,7 +47,7 @@ class App extends React.Component<Props, State>{
     VfriendsStore.updateData(data.vfriendsData);
   }
 
-  render(){
+  render() {
     return (
       <Container>
         <GlobalStyles />
@@ -53,10 +55,10 @@ class App extends React.Component<Props, State>{
           <Route path="/" exact component={Home} />
           <Route path="/vfriends" exact component={Vfriends} />
           <Route path="/aun" exact component={Aun} />
-          <Route path="/tate" exact component={Tate}/>
+          <Route path="/tate" exact component={Tate} />
           <Route path="/junr" exact component={Junr} />
           <Route path="/mir" exact component={Mir} />
-          <Route path="/detail/:type/:id" exact component={Detail}/>
+          <Route path="/detail/:type/:id" exact component={Detail} />
           <Route exact component={Notfound} />
         </Switch>
       </Container>

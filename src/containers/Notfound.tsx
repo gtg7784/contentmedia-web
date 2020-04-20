@@ -61,27 +61,26 @@ const Back = styled.button`
 
 interface Props { }
 
-const Notfound: React.FC<Props> = () => {
-  return (
-    <Container>
-      <HeaderComponent />
+const Notfound: React.FC<Props> = () => (
+  <Container>
+    <HeaderComponent />
 
-      <Illust src={illust} />
-      <Title>404 NOT FOUND!</Title>
-      <Description>
-        페이지를 찾을 수 없습니다<br/>
-        요청하신 작업을 다시 실행해주세요
-      </Description>
-      <ButtonWrap>
-        <Home>
-          <img src={homeTypo} alt=""/>
-        </Home>
-        <Back>
-          <img src={backTypo} alt=""/>
-        </Back>
-      </ButtonWrap>
-    </Container>
-  )
-}
+    <Illust src={illust} />
+    <Title>404 NOT FOUND!</Title>
+    <Description>
+      페이지를 찾을 수 없습니다
+      <br />
+      요청하신 작업을 다시 실행해주세요
+    </Description>
+    <ButtonWrap>
+      <Home>
+        <img src={homeTypo} alt="" />
+      </Home>
+      <Back>
+        <img src={backTypo} alt="" />
+      </Back>
+    </ButtonWrap>
+  </Container>
+);
 
 export default Notfound;

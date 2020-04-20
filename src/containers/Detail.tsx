@@ -64,7 +64,7 @@ const Description = styled.p`
   line-height: 1.52;
 `;
 
-interface Props { 
+interface Props {
   AunStore: ClubStoreType;
   JunrStore: ClubStoreType;
   MirStore: ClubStoreType
@@ -84,64 +84,66 @@ interface State {
 
 @inject('AunStore', 'JunrStore', 'MirStore', 'TateStore', 'VfriendsStore')
 @observer
-class Detail extends React.Component<Props, State>{
-  constructor(props: Props){
+class Detail extends React.Component<Props, State> {
+  constructor(props: Props) {
     super(props);
 
     this.state = {
       type: undefined,
-    }
+    };
   }
-  
-  componentDidMount(){
-    const { AunStore, JunrStore, MirStore, TateStore, VfriendsStore, match: { params: { type, id }}} = this.props;
+
+  componentDidMount() {
+    const {
+      AunStore, JunrStore, MirStore, TateStore, VfriendsStore, match: { params: { type, id } },
+    } = this.props;
 
     window.scrollTo(0, 0);
 
     let clubData: ClubStoreType;
-    
-    if(type === "aun") {
+
+    if (type === 'aun') {
       clubData = AunStore;
-    } else if (type === "junr") {
+    } else if (type === 'junr') {
       clubData = JunrStore;
-    } else if (type === "mir") {
+    } else if (type === 'mir') {
       clubData = MirStore;
-    } else if (type === "tate") {
+    } else if (type === 'tate') {
       clubData = TateStore;
-    } else if (type === "vfriends") {
-      clubData = VfriendsStore
+    } else if (type === 'vfriends') {
+      clubData = VfriendsStore;
     }
-    
+
     const json = JSON.stringify(clubData.data[+id]);
 
     this.setState({
-      type: type,
-      data: JSON.parse(json).data
+      type,
+      data: JSON.parse(json).data,
     });
   }
-  
-  render(){
+
+  render() {
     const { type, data } = this.state;
 
-    return(
+    return (
       <Container>
-        <HeaderComponent type={type}/>
+        <HeaderComponent type={type} />
         <ContentWrap>
           <ArtworkWrap>
             {data && data.images.map((item: string, index: number) => (
-              <Image src={item} alt="" key={index}/>
+              <Image src={item} alt="" key={index} />
             ))}
             {data && data.link && <ReactPlayer url={data.link} width="600px" height="400px" />}
           </ArtworkWrap>
           <ProfileWrap>
             <Name>{data && data.profile.name}</Name>
             <Email>{data && data.profile.email}</Email>
-            <Description dangerouslySetInnerHTML={{ __html: data && data.profile.description }}/>
+            <Description dangerouslySetInnerHTML={{ __html: data && data.profile.description }} />
           </ProfileWrap>
         </ContentWrap>
-        <FooterComponent/>
+        <FooterComponent />
       </Container>
-    )
+    );
   }
 }
 

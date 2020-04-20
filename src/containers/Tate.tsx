@@ -76,7 +76,7 @@ const WikiWrap = styled.a`
   margin-bottom: 171px;
   margin-top: 90px;
   text-decoration: none;
-`
+`;
 const WikiText = styled.span`
   font-size: 24px;
   font-weight: bold;
@@ -89,36 +89,45 @@ const WikiText = styled.span`
 
 interface Props {
   TateStore: ClubStoreType;
-};
-interface State { };
+}
+interface State { }
 
 @inject('TateStore')
 @observer
-class Tate extends React.Component<Props, State>{
-  componentDidMount(){
+class Tate extends React.Component<Props, State> {
+  componentDidMount() {
     window.scrollTo(0, 0);
   }
-  
-  render(){
+
+  render() {
     const { TateStore: { data } } = this.props;
-    return(
+    return (
       <Container>
         <HeaderComponent type="tate" />
-        <Banner src={banner} alt=""/>
+        <Banner src={banner} alt="" />
         <Title>INTRODUCE</Title>
-        <Logo src={logo} alt=""/>
+        <Logo src={logo} alt="" />
         <Description>
-          TATE는 다양한 분야의 디자인을<br/>
-          다루는 디자이너들이 모여 자신의 개성과<br/>
-          창의성을 마음껏 발휘할 수 있는<br/>
-          전공 디자인 동아리입니다.<br/>
-          <br/>
-          TATE에서는 일러스트, 포토샵, 3D MAX 등을 통해<br/>
-          여러 분야의 디자인을 배우고 익히며 자신의 능력과 창의력을<br/>
-          한층 더 발전시킬 수 있습니다.<br/>
-          <br/>
-          또한 소프트웨어 나눔축제, 선린축제 굿즈 부스와 같은 행사에<br/>
-          참여하여 다양한 경험을 할 수 있습니다.<br/>
+          TATE는 다양한 분야의 디자인을
+          <br />
+          다루는 디자이너들이 모여 자신의 개성과
+          <br />
+          창의성을 마음껏 발휘할 수 있는
+          <br />
+          전공 디자인 동아리입니다.
+          <br />
+          <br />
+          TATE에서는 일러스트, 포토샵, 3D MAX 등을 통해
+          <br />
+          여러 분야의 디자인을 배우고 익히며 자신의 능력과 창의력을
+          <br />
+          한층 더 발전시킬 수 있습니다.
+          <br />
+          <br />
+          또한 소프트웨어 나눔축제, 선린축제 굿즈 부스와 같은 행사에
+          <br />
+          참여하여 다양한 경험을 할 수 있습니다.
+          <br />
         </Description>
         <Title>activities</Title>
         <PrizeWrap>
@@ -127,7 +136,7 @@ class Tate extends React.Component<Props, State>{
         </PrizeWrap>
         <WikiWrap href="https://sunrinwiki.layer7.kr/index.php/TATE">
           <WikiText>VIEW MORE</WikiText>
-          <img src={arrowRight} alt=""/>
+          <img src={arrowRight} alt="" />
         </WikiWrap>
         <Title id="artworks">ARTWORKS</Title>
         <ArtworkWrap>
@@ -144,9 +153,9 @@ class Tate extends React.Component<Props, State>{
             />
           ))}
         </ArtworkWrap>
-        <FooterComponent/>
+        <FooterComponent />
       </Container>
-    )
+    );
   }
 }
 
