@@ -27,14 +27,15 @@ interface Props {
 }
 
 const PrizeComponent: React.FC<Props> = (props: Props) => {
+  const { title, number } = props;
   return (
     <Container>
-      <Title src={props.title} alt=""/>
+      <Title src={title} alt="" />
       <Oval>
-        <img src={props.number} alt=""/>
+        <img src={number} alt="" />
       </Oval>
     </Container>
-  )
-}
+  );
+};
 
 export default PrizeComponent;

@@ -59,7 +59,7 @@ interface clubType {
   background: string;
 }
 
-interface Props { 
+interface Props {
   type?: clubs;
 }
 
@@ -69,157 +69,158 @@ const getAsset = (type: clubs): clubType => {
       image: vfriendsLogo,
       menu: [
         {
-          text: "HOME",
-          id: "#home"
-        }, 
-        {
-          text: "INTRODUCE",
-          id: "#intro"
+          text: 'HOME',
+          id: '#home',
         },
         {
-          text: "ACTIVITIES",
-          id: "#activity"
+          text: 'INTRODUCE',
+          id: '#intro',
         },
         {
-          text: "ARTWORKS",
-          id: "#artworks"
-        }
+          text: 'ACTIVITIES',
+          id: '#activity',
+        },
+        {
+          text: 'ARTWORKS',
+          id: '#artworks',
+        },
       ],
-      width: "140px",
-      height: "37px",
-      background: "#222222"
+      width: '140px',
+      height: '37px',
+      background: '#222222',
     },
     tate: {
       image: tateLogo,
       menu: [
         {
-          text: "HOME",
-          id: "#home"
-        }, 
-        {
-          text: "INTRODUCE",
-          id: "#intro"
+          text: 'HOME',
+          id: '#home',
         },
         {
-          text: "ACTIVITIES",
-          id: "#activity"
+          text: 'INTRODUCE',
+          id: '#intro',
         },
         {
-          text: "ARTWORKS",
-          id: "#artworks"
-        }
+          text: 'ACTIVITIES',
+          id: '#activity',
+        },
+        {
+          text: 'ARTWORKS',
+          id: '#artworks',
+        },
       ],
-      width: "68px",
-      height: "68px",
-      background: "#f4f8fc"
+      width: '68px',
+      height: '68px',
+      background: '#f4f8fc',
     },
     mir: {
       image: mirLogo,
       menu: [
         {
-          text: "HOME",
-          id: "#home"
-        }, 
-        {
-          text: "INTRODUCE",
-          id: "#intro"
+          text: 'HOME',
+          id: '#home',
         },
         {
-          text: "ACTIVITIES",
-          id: "#activity"
+          text: 'INTRODUCE',
+          id: '#intro',
         },
         {
-          text: "ARTWORKS",
-          id: "#artworks"
-        }
+          text: 'ACTIVITIES',
+          id: '#activity',
+        },
+        {
+          text: 'ARTWORKS',
+          id: '#artworks',
+        },
       ],
-      width: "80px",
-      height: "80px",
-      background: "#f4f8fc"
+      width: '80px',
+      height: '80px',
+      background: '#f4f8fc',
     },
     aun: {
       image: aunLogo,
       menu: [
         {
-          text: "HOME",
-          id: "#home"
-        }, 
-        {
-          text: "INTRODUCE",
-          id: "#intro"
+          text: 'HOME',
+          id: '#home',
         },
         {
-          text: "MEMBERS",
-          id: "#member"
+          text: 'INTRODUCE',
+          id: '#intro',
         },
         {
-          text: "ARTWORKS",
-          id: "#artworks"
-        }
+          text: 'MEMBERS',
+          id: '#member',
+        },
+        {
+          text: 'ARTWORKS',
+          id: '#artworks',
+        },
       ],
-      width: "110px",
-      height: "52px",
-      background: "#f4f8fc"
+      width: '110px',
+      height: '52px',
+      background: '#f4f8fc',
     },
     junr: {
       image: junrLogo,
       menu: [
         {
-          text: "HOME",
-          id: "#home"
-        }, 
-        {
-          text: "INTRODUCE",
-          id: "#intro"
+          text: 'HOME',
+          id: '#home',
         },
         {
-          text: "ACTIVITIES",
-          id: "#activity"
+          text: 'INTRODUCE',
+          id: '#intro',
         },
         {
-          text: "ARTWORKS",
-          id: "#artworks"
-        }
+          text: 'ACTIVITIES',
+          id: '#activity',
+        },
+        {
+          text: 'ARTWORKS',
+          id: '#artworks',
+        },
       ],
-      width: "82px",
-      height: "80px",
-      background: "#222222"
+      width: '82px',
+      height: '80px',
+      background: '#222222',
     },
     default: {
       image: logo,
       menu: [
         {
-          text: "HOME",
-          id: "#home"
-        }, 
-        {
-          text: "MEMBERS",
-          id: "#members"
+          text: 'HOME',
+          id: '#home',
         },
         {
-          text: "QnA",
-          id: "#qna"
-        }
+          text: 'MEMBERS',
+          id: '#members',
+        },
+        {
+          text: 'QnA',
+          id: '#qna',
+        },
       ],
-      width: "70px",
-      height: "40px",
-      background: "#ffffff"
-    }
+      width: '70px',
+      height: '40px',
+      background: '#ffffff',
+    },
   };
 
-  if(type === undefined){
-    return asset['default'];
+  if (type === undefined) {
+    return asset.default;
   }
 
   return asset[type];
-}
+};
 
 const HeaderComponent: React.FC<Props> = (props: Props) => {
-  const asset = getAsset(props.type);
+  const { type } = props;
+  const asset = getAsset(type);
 
   return (
-    <Container background={asset.background} >
-      <Logo src={asset.image} width={asset.width} height={asset.height}/>
+    <Container background={asset.background}>
+      <Logo src={asset.image} width={asset.width} height={asset.height} />
       <List>
         {asset.menu.map((item, index) => (
           <Listitem key={index}>
@@ -228,7 +229,7 @@ const HeaderComponent: React.FC<Props> = (props: Props) => {
         ))}
       </List>
     </Container>
-  )
-}
+  );
+};
 
 export default HeaderComponent;

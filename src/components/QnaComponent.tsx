@@ -50,18 +50,19 @@ interface Props {
 }
 
 const QnaComponent: React.FC<Props> = (props: Props) => {
-  return(
-    <Container style={props.style}>
+  const { style, question, answer } = props;
+  return (
+    <Container style={style}>
       <QWrap>
-        <img src={QIcon} alt=""/>
-        <QText>{props.question}</QText>
+        <img src={QIcon} alt="" />
+        <QText>{question}</QText>
       </QWrap>
       <AWrap>
-        <img src={AIcon} alt=""/>
-        <AText dangerouslySetInnerHTML={{ __html: props.answer }} />
+        <img src={AIcon} alt="" />
+        <AText dangerouslySetInnerHTML={{ __html: answer }} />
       </AWrap>
     </Container>
-  )
-}
+  );
+};
 
 export default QnaComponent;

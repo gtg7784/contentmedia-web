@@ -49,23 +49,22 @@ interface Props {
   name: string;
   style?: Object;
 }
-interface State { }
 
-class ArtworkComponent extends React.Component<Props, State> {
-  render(){
-    const { name, index, title, type, img, description, style } = this.props;
+const ArtworkComponent: React.FC<Props> = (props: Props) => {
+  const {
+    name, index, title, type, img, description, style,
+  } = props;
 
-    return (
-      <Container style={style}>
-        <Link to={`/detail/${name}/${index}`}>
-          <Image src={img}/>
-          <Title>{title}</Title>
-          <Type>{type}</Type>
-          <Description>{description}</Description>
-        </Link>
-      </Container>
-    )
-  }
-}
+  return (
+    <Container style={style}>
+      <Link to={`/detail/${name}/${index}`}>
+        <Image src={img} />
+        <Title>{title}</Title>
+        <Type>{type}</Type>
+        <Description>{description}</Description>
+      </Link>
+    </Container>
+  );
+};
 
 export default ArtworkComponent;

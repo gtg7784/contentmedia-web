@@ -32,7 +32,7 @@ const Container = styled.div`
   margin-left: 66px;
   margin-bottom: 80px;
   transition: 1s;
-  transform translateX(${(props: ContainerProps) => props.isTransition === 0 ? "0px" : "-274px"});
+  transform translateX(${(props: ContainerProps) => (props.isTransition === 0 ? '0px' : '-274px')});
 
   a{
     width: 144px;
@@ -63,16 +63,21 @@ const Text = styled.div`
 `;
 
 const ClubComponent: React.FC<Props> = (props: Props) => {
-  const { clubStatus } = props;
+  const {
+    clubStatus, to, style, logo, content, top, bottom,
+  } = props;
 
-  const link = props.to.indexOf('http') === -1 ? <Link to={props.to}>JUMP TO</Link> : <a href={props.to}>JUMP TO</a>
+  const link = to.indexOf('http') === -1 ? <Link to={to}>JUMP TO</Link> : <a href={to}>JUMP TO</a>;
   return (
-    <Container style={props.style} isTransition={clubStatus}>
-      <img src={props.logo} alt=""/>
-      <Text dangerouslySetInnerHTML={{ __html: props.content }} style={{ marginTop: props.top, marginBottom: props.bottom }} />
+    <Container style={style} isTransition={clubStatus}>
+      <img src={logo} alt="" />
+      <Text
+        dangerouslySetInnerHTML={{ __html: content }}
+        style={{ marginTop: top, marginBottom: bottom }}
+      />
       {link}
     </Container>
-  )
-}
+  );
+};
 
 export default ClubComponent;
