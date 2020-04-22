@@ -407,7 +407,7 @@ const tateData: Array<ArtworkType> = [
     data: {
       images: [artwork24_1],
       profile: {
-        name: '정제우',
+        name: '정재우',
         email: 'yus000002@naver.com',
         description: "오로지 수채화 물감을 이용해 그린 케이크이다.",
       },
@@ -422,7 +422,7 @@ const tateData: Array<ArtworkType> = [
     data: {
       images: [artwork25_1],
       profile: {
-        name: '정제우',
+        name: '정재우',
         email: 'yus000002@naver.com',
         description: "포스터물감과 수채화 물감을 이용해 그린 지하철이다.",
       },
@@ -436,7 +436,7 @@ const tateData: Array<ArtworkType> = [
     data: {
       images: [artwork26_1],
       profile: {
-        name: '정제우',
+        name: '정재우',
         email: 'yus000002@naver.com',
         description: '2019년 테이트 할로윈 파티를 맞이하여 손거울에 썼던 디자인이다. 달이 나무에 기생되고있는 것과 그 안에 있는 묘지와 좀비는 할로윈 분위기를 조성한다.'
       },
@@ -450,7 +450,7 @@ const tateData: Array<ArtworkType> = [
     data: {
       images: [artwork27_1],
       profile: {
-        name: '정제우',
+        name: '정재우',
         email: 'yus000002@naver.com',
         description: '마블에 나오는 베놈과 그의 숙적 카니지를 대치하는 그림으로써 빨간색 배경으로 정열적이고 격렬한 느낌을 준다.'
       },
