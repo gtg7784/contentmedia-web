@@ -19,6 +19,7 @@ const ContentWrap = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin-top: 140px;
+  margin-bottom: 200px;
 `;
 const ArtworkWrap = styled.div`
   width: 600px;
@@ -130,15 +131,15 @@ class Detail extends React.Component<Props, State> {
         <HeaderComponent type={type} />
         <ContentWrap>
           <ArtworkWrap>
-            {data && data.images.map((item) => (
+            {data?.images.map((item) => (
               <Image src={item} alt="" key={item} />
             ))}
-            {data && data.link && <ReactPlayer url={data.link} width="600px" height="400px" />}
+            <ReactPlayer url={data?.link} width="600px" height="400px" />
           </ArtworkWrap>
           <ProfileWrap>
-            <Name>{data && data.profile.name}</Name>
-            <Email>{data && data.profile.email}</Email>
-            <Description dangerouslySetInnerHTML={{ __html: data && data.profile.description }} />
+            <Name>{data?.profile.name}</Name>
+            <Email>{data?.profile.email}</Email>
+            <Description dangerouslySetInnerHTML={{ __html: data?.profile.description }} />
           </ProfileWrap>
         </ContentWrap>
         <FooterComponent />
