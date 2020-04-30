@@ -155,7 +155,6 @@ class Vfriends extends React.Component<Props, State> {
               title={item.title}
               type={item.type}
               description={item.description}
-              style={item.style}
               key={item.title}
               index={index}
             />

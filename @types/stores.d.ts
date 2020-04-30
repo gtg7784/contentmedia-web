@@ -20,7 +20,6 @@ declare global {
     title: string;
     type: string;
     description: string;
-    style?: Object;
     data: DataType;
   }
   

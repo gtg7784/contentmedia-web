@@ -38,7 +38,6 @@ const aunData: Array<ArtworkType> = [
     title: '빈 집(스틸컷)_아우내',
     type: 'MOVIE MAKING',
     description: '2019년 여름방학 때 22기, 23기 일부 부원들 및 지인들과 함께 촬영한 작품입니다. 동정심에 처음 보는 사람을 위해 노력한 것이 자신이 …',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork1_1, artwork1_2, artwork1_3, artwork1_4, artwork1_5, artwork1_6, artwork1_7, artwork1_8, artwork1_9, artwork1_10, artwork1_11, artwork1_12, artwork1_13, artwork1_14, artwork1_15, artwork1_16, artwork1_17],
       profile: {

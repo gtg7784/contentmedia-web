@@ -76,7 +76,6 @@ const tateData: Array<ArtworkType> = [
     title: "할로윈 콜라주_김나현",
     type: "COLLAGE",
     description: "테이트 축제 굿즈인 스티커로 제작했던 할로윈 콜라주이다.",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork1_1],
       profile: {
@@ -133,7 +132,6 @@ const tateData: Array<ArtworkType> = [
     title: "선린축제 포스터_김나현",
     type: "POSTER",
     description: "2019 선린축제의 포스터를 맡아서 작업했다. 다양한 사람들이 하나가 되어 모이는 것을 표현하고자 각각 색감이 상반되는 세가지의 색을…",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork5_1],
       profile: {
@@ -190,7 +188,6 @@ const tateData: Array<ArtworkType> = [
     title: "HAPPY HALLOWEEN",
     type: "ILLUSTRATION",
     description: "학교축제 테이트 부서에서 스티커로 내려고 만든 작품입니다. 도트로 최대한 할로윈 분위기를 살려 만든 작품입니다.",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork9_1],
       profile: {
@@ -247,7 +244,6 @@ const tateData: Array<ArtworkType> = [
     title: "Neverland_박은별",
     type: "ILLUSTRATION",
     description: "",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork13_1],
       profile: {
@@ -304,7 +300,6 @@ const tateData: Array<ArtworkType> = [
     title: "strawberry cake_송지연",
     type: "ILLUSTRATION",
     description: "신비로운 느낌을 주기 위해 보라 계열을 사용하여 작업한 딸기 케이크 픽셀아트입니다. ",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork17_1],
       profile: {
@@ -361,7 +356,6 @@ const tateData: Array<ArtworkType> = [
     title: "반딧불이_유혜진",
     type: "ILLUSTRATION",
     description: "할로윈을 주제로 한 일러스트",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork21_1],
       profile: {
@@ -418,7 +412,6 @@ const tateData: Array<ArtworkType> = [
     title: "지하철_정재우",
     type: "ILLUSTRATION",
     description: "포스터물감과 수채화 물감을 이용해 그린 지하철이다.",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork25_1],
       profile: {
@@ -475,7 +468,6 @@ const tateData: Array<ArtworkType> = [
     title: "<까오> 캐릭터디자인_정한비",
     type: "CHARACTER DESIGN",
     description: "평소 좋아하던 가오리를 캐릭터로 디자인하여 이모티콘 형식으로 만들었다. 6종류의 표정과 기본형을 제작하여 디자인한 캐릭터를 소개…",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork29_1],
       profile: {
@@ -532,7 +524,6 @@ const tateData: Array<ArtworkType> = [
     title: "해피 스켈레톤_조민준",
     type: "ILLUSTRATION",
     description: "축제 때 동아리 굿즈로 제작되었다.",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork33_1],
       profile: {

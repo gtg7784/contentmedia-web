@@ -78,7 +78,6 @@ const mirData: Array<ArtworkType> = [
     title: '꽃가루 요정, 비비_강민지',
     type: 'ILLUSTRATION',
     description: '우리들의 눈에는 보이지 않지만 가까운 곳에서 열심히 일하는 꽃들의 작은 기사들. 플로라 나라의 꽃가루 요정들은 자신이 맡은 계절을 …',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork1_1, artwork1_2, artwork1_3],
       profile: {
@@ -135,7 +134,6 @@ const mirData: Array<ArtworkType> = [
     title: '야채6총사_김은서',
     type: 'CHARACTER DESIGN	',
     description: '항상 서울진출을 꿈꾸는 시골텃밭 야채친구들이 스타가 되고 싶어서 이모티콘이 되기로 하고 만들어진 야채 6총사.',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork5_1, artwork5_2, artwork5_3],
       profile: {
@@ -192,7 +190,6 @@ const mirData: Array<ArtworkType> = [
     title: '옆모습 미인_김자현',
     type: 'ILLUSTRATION',
     description: '학교축제 테이트 부서에서 스티커로 내려고 만든 작품입니다. 도트로 최대한 할로윈 분위기를 살려 만든 작품입니다.',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork9_1],
       profile: {
@@ -249,7 +246,6 @@ const mirData: Array<ArtworkType> = [
     title: '세라복_김혜진',
     type: 'ILLUSTRATION',
     description: '옛날 교과서에 있는 그림을 보며 영감을 얻었다. 하이라이트가 돋보이는 머리칼에 전체적으로 채도가 높은 색으로 채색했다. 버건디의 상의에…',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork13_1],
       profile: {
@@ -306,7 +302,6 @@ const mirData: Array<ArtworkType> = [
     title: '레트로 미르_김혜진',
     type: 'ILLUSTRATION',
     description: '채도가 높고 대조를 이루는 색을 사용해 화려함을 표현했다. 두 소녀가 입고있는 외투는 미르의 야구자켓이며, 기하학적인 도형을 배경으로…',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork17_1],
       profile: {
@@ -363,7 +358,6 @@ const mirData: Array<ArtworkType> = [
     title: '동양풍그림_염지원',
     type: 'ILLUSTRATION',
     description: '클립스튜디오를 사용한 동양풍 일러스트이다',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork21_1],
       profile: {
@@ -420,7 +414,6 @@ const mirData: Array<ArtworkType> = [
     title: 'SUMMER_장하민',
     type: 'ILLUSTRATION',
     description: '무더운 여름날, 평상에 앉아 아이스크림으로 더위를 달래는 아이를 표현하였다. 비교적 단조로워 보이는 상단부분을 채우기 위해 SUMMER…',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork25_1],
       profile: {
@@ -477,7 +470,6 @@ const mirData: Array<ArtworkType> = [
     title: '너를 항해_최가은',
     type: 'ILLUSTRATION',
     description: "밤바다를 항해하고 있는 배가 꽃잎들을 바다에 뿌리고 있다. '나'를 떠나가는 사람들을 붙잡고 싶다고 그 자리에 멈춰서 기다리고 있을 수는 …",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork29_1],
       profile: {
@@ -534,7 +526,6 @@ const mirData: Array<ArtworkType> = [
     title: '수_최가은',
     type: 'ILLUSTRATION',
     description: "컴퓨터그래픽시간에 캐릭터디자인 수행평가를 위해 만든 게임 캐릭터다. '수'라는 이름은 영단어 'sew(꿰매다)'에서 가져왔다….",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork33_1],
       profile: {

@@ -123,7 +123,6 @@ const vfriendsData: Array<ArtworkType> = [
     title: '자기소개 인포그래픽_곽승채',
     type: 'INFOGRAPHIC',
     description: '나에 대한 정보를 인포그래픽으로 나타내었다. 기본적인 정보들과 취미, 관심사, 다룰 수 있는 프로그램이 주 내용이다. 간결한 느낌을 주기…',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork1_1],
       profile: {
@@ -181,7 +180,6 @@ const vfriendsData: Array<ArtworkType> = [
     title: '세월의 무색함_김민',
     type: '3D',
     description: '2014년 7월, 한 중년 남성이 전봇대에 오르다 감전 당한 사건을 기억하는가? 그는 경범죄로 조사받은 것에 항의하려 전봇대에 올라갔다가…',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork5_1],
       profile: {
@@ -239,7 +237,6 @@ const vfriendsData: Array<ArtworkType> = [
     title: '브이프렌즈 홍보영상 3D_김민',
     type: 'MOTION GRAPHICS',
     description: '브이프렌즈 시연회/홍보영상을 제작하였다. 렌더링은 모두 1프레임당 5분정도 걸렸고 60프레임으로 작업하였다. 렌더링하는 시간이…',
-    style: { marginLeft: 0 },
     data: {
       images: [],
       profile: {
@@ -300,7 +297,6 @@ const vfriendsData: Array<ArtworkType> = [
     title: '앱잼 NUGU ‘Zento’_김민준',
     type: 'MOTION GRAPHICS',
     description: '작년 말 앱잼에서 제작했던 영상으로 열심히 작업했던 영상이다. 비록 입상을 하지는 못하였으나 외부 해커톤을 통해 새로운 경험을 할 수…',
-    style: { marginLeft: 0 },
     data: {
       images: [],
       profile: {
@@ -358,7 +354,6 @@ const vfriendsData: Array<ArtworkType> = [
     title: 'thisislove_김예린',
     type: 'ILLUSTRATION',
     description: '딱히 뜻은 없고 그냥 누워있다가 그림이 그리고 싶어져서 그렸다. 색은 굳이 칠하지 않았고 흑백이 더욱 어울리는 느낌인 것 같아 흑백으로 …',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork17_1],
       profile: {
@@ -416,7 +411,6 @@ const vfriendsData: Array<ArtworkType> = [
     title: '선린제 부스 포스터_성지빈',
     type: 'POSTER',
     description: '선린제 부스 홍보 포스터 1과 같은 시리즈로 만들었다. 홍보를 위한 포스터가 아닌 사람들에게 알리기 위한 메뉴판 포스터인만큼 내용을…',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork21_1, artwork21_2],
       profile: {
@@ -473,7 +467,6 @@ const vfriendsData: Array<ArtworkType> = [
     title: 'Vilolet, 나의 상상 속_성지빈',
     type: 'POSTER',
     description: '어릴 적, 내 꿈은 마녀였다. 구름을 보며 무엇인가를 떠올리는 것을 즐겼고 마법을 부리기 위해 주문을 외우는 것도 서슴치 않았다. 커 갈수록…',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork25_1],
       profile: {
@@ -530,7 +523,6 @@ const vfriendsData: Array<ArtworkType> = [
     title: '인포그래픽 모작_성지빈',
     type: 'INFOGRAPHIC',
     description: '항상 다른 사람들의 인포그래픽을 봐오다 나를 나타내는 인포그래픽을 만들고자해서 모작으로 제작하게 되었다. 가장 좋아하는 색이자 나를…',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork29_1],
       profile: {
@@ -587,7 +579,6 @@ const vfriendsData: Array<ArtworkType> = [
     title: 'UI/UX교재_브이프렌즈',
     type: 'EDITORIAL DESIGN',
     description: '선린 SSF 나눔축제 브이프렌즈 교재를 여러 부원이 함꼐 제작했다. ',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork33_1],
       profile: {
@@ -644,7 +635,6 @@ const vfriendsData: Array<ArtworkType> = [
     title: 'yellow_최서연',
     type: 'ILLUSTRATION',
     description: '난색 계열만을 사용해 인물을 표현했다. 배경에도 노을이 진 하늘을 흐리게 합성했다. 따뜻한 색을 사용했지만, 인물은 어딘가 쓸쓸해보인다…',
-    style: { marginLeft: 0 },
     data: {
       images: [artwork37_1],
       profile: {
@@ -701,7 +691,6 @@ const vfriendsData: Array<ArtworkType> = [
     title: '그 공간 너머_최서연',
     type: 'ILLUSTRATION',
     description: "'피터팬'에 나오는 네버렌드는 환상 속의 나라이다. 현실에서 그 환상 너머로 데려다주는 특별한 말을 표현해봤다. 알록달록한 다양한 색채를…",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork41_1],
       profile: {
@@ -758,7 +747,6 @@ const vfriendsData: Array<ArtworkType> = [
     title: 'glorypath_김예린',
     type: 'ILLUSTRATION',
     description: "'피터팬'에 나오는 네버렌드는 환상 속의 나라이다. 현실에서 그 환상 너머로 데려다주는 특별한 말을 표현해봤다. 알록달록한 다양한 색채를…",
-    style: { marginLeft: 0 },
     data: {
       images: [artwork45_1, artwork45_2],
       profile: {

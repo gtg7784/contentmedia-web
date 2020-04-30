@@ -183,7 +183,6 @@ class Mir extends React.Component<Props, State> {
               title={item.title}
               type={item.type}
               description={item.description}
-              style={item.style}
               index={index}
               key={item.title}
             />

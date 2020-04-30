@@ -21,7 +21,6 @@ const junrData: Array<ArtworkType> = [
     title: '자의누리 타이포 합작_눈',
     type: 'MOTION GRAPHICS',
     description: '자의누리 11기 학생들이 진행한 키네틱 타이포그래피입니다',
-    style: { marginLeft: 0 },
     data: {
       images: [],
       profile: {
@@ -82,7 +81,6 @@ const junrData: Array<ArtworkType> = [
     title: '유튜브 인트로_남민우',
     type: 'MOTION GRAPHICS',
     description: '저만의 유튜브를 만든다면 쓰게 될 인트로를 예상하여 만들어본 작품입니다. 애프터 이펙트로 제작한 영상으로 다른 사람들이 후회되는…',
-    style: { marginLeft: 0 },
     data: {
       images: [],
       profile: {
@@ -142,7 +140,6 @@ const junrData: Array<ArtworkType> = [
     title: '시나브로_문은빈',
     type: 'MOVIE',
     description: '영상공모전 영화 부문 금상 수상작으로 청소년들의 도박 문제가 예전보다 심각해지고 있습니다. 제목 이름 시나브로 뜻 처럼 모르는 …',
-    style: { marginLeft: 0 },
     data: {
       images: [],
       profile: {
@@ -203,7 +200,6 @@ const junrData: Array<ArtworkType> = [
     title: '[3학년]신재생에너지_김희서',
     type: 'MOTION GRAPHICS',
     description: '그래픽공모전 금상 수상작입니다. 환경 오염이 심해지는 지구, 모든 생물들이 살아가는 자연을 인간이 스스로 무너뜨리고 있습니다. …',
-    style: { marginLeft: 0 },
     data: {
       images: [],
       profile: {

@@ -2,13 +2,18 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+interface StyleType {
+  index: number;
+}
+
 const Container = styled.div`
   width: 220px;
   height: 340px;
   display: flex;
   flex-direction: column;
-  margin-left: 56px;
+  margin-left: ${(props: StyleType) => props.index%4 === 0 ? '0px': '56px'};
   margin-bottom: 60px;
+
   a {
     text-decoration: none;
   }
@@ -47,16 +52,15 @@ interface Props {
   description: string;
   index: number;
   name: string;
-  style?: Object;
 }
 
 const ArtworkComponent: React.FC<Props> = (props: Props) => {
   const {
-    name, index, title, type, img, description, style,
+    name, index, title, type, img, description
   } = props;
 
   return (
-    <Container style={style}>
+    <Container index={index}>
       <Link to={`/detail/${name}/${index}`}>
         <Image src={img} />
         <Title>{title}</Title>
